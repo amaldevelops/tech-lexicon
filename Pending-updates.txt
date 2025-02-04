@@ -33,12 +33,7 @@ systemctl restart --user xdg-desktop-portal-gnome.service
 *****NodeJs****
 npm init -y  to start the package.json file 
 
-npm install express express-session pg passport passport-local ejs
-
-npm install express-validator
-
-npm install bcryptjs
-
+npm install express express-session pg passport passport-local ejs express-validator bcryptjs
 
 Enter the PostgreSQL shell by running psql in your terminal. You can view the current dbs using the \l command. To create a new db by running the following SQL statement:
 
