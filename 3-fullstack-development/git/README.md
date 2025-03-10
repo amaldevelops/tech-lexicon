@@ -1,4 +1,7 @@
 # Git Reference
 
-<li><a href="https://1amal.github.io/engineering-reference/">Back to Main Index</a></li>
+### Steps to Update the Remote URL
 
+- This will display the current fetch and push URLs for your remote repository.
+`git remote -v`
+- Update the Remote URL : `git remote set-url origin <new_url>`
