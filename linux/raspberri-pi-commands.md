@@ -1,4 +1,4 @@
-heck if xterm package exists.
+Check if xterm package exists.
 Run
 
 dpkg -l | grep xterm
