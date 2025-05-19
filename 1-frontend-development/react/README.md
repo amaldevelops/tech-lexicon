@@ -8,7 +8,7 @@
 
 ## Setup React Router
 
-- Installation: npm install react-router-dom
+- Installation: `npm install react-router-dom`
 - Detailed instructions from The Odin Project: https://www.theodinproject.com/lessons/node-path-react-new-react-router 
 
 ## Deploy React App to Github Pages
