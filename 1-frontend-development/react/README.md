@@ -9,6 +9,7 @@
 ## Setup React Router
 
 - Installation: `npm install react-router-dom`
+- Please refer main.jsx, routes.jsx, ErrorPage.jsx for how to set up React router in the project.
 - Detailed instructions from The Odin Project: https://www.theodinproject.com/lessons/node-path-react-new-react-router 
 
 ## Deploy React App to Github Pages
