@@ -16,7 +16,7 @@
 
 - Install Github pages: `npm install --save-dev gh-pages`
 - Make sure vite.config.js is configured with:
-  `export default defineConfig({ base: 'https://www.amalk.au/<your-repo-name>/', plugins: [react()],})` Make sure to put the correct domain name otherwise you will get CORS errors. i.e. if the github account is configured with a custom domain use it other wise use your github username `base: 'https://<your-username>.github.io/<your-repo-name>/')`
+  `export default defineConfig({ base: '/<your-repo-name>/', plugins: [react()],})` Normally this should work. If it doesn't work make sure to put the correct domain name otherwise you will get CORS errors. i.e. if the github account is configured with a custom domain use it other wise use your github username `base: 'https://<your-username>.github.io/<your-repo-name>/')`
 - Add Deployment Scripts to package.json (predeploy: runs npm run build before deploying | deploy: pushes the built dist folder to the gh-pages branch)
   `"scripts": {"predeploy": "npm run build",  "deploy": "gh-pages -d dist"}`
 - Make sure your .gitignore does not ignore the dist/ folder if you're using git subtree.
