@@ -10,19 +10,24 @@
 
 - Installation: `npm install react-router-dom`
 - Please refer main.jsx, routes.jsx, ErrorPage.jsx for how to set up React router in the project.
-- Detailed instructions from The Odin Project: https://www.theodinproject.com/lessons/node-path-react-new-react-router 
+- Detailed instructions from The Odin Project: https://www.theodinproject.com/lessons/node-path-react-new-react-router
 
 ## Deploy React App to Github Pages
 
-- Remove the 'dist' directory from the project’s .gitignore file.
-Make sure git knows about your subtree (the subfolder with your site) `git add dist && git commit -m "Initial dist subtree commit"`
-- Use subtree push to send it to the gh-pages branch on GitHub. git subtree push --prefix dist origin gh-pages Boom. If your folder isn’t called dist, then you’ll need to change that in each of the commands above.
-- Make sure Vite is configured with: 
-`// vite.config.js
-export default defineConfig({
-  base: 'https://www.amalk.au/full-stack-blog'
-  plugins: [react()],
-});`
-- Make sure to put the correct domain name otherwise you will get CORS errors.
-- By adding this to the packages.json, you can simply push the commit to both the main branch and the gh-pages branch (Git Hub pages will be served from gh-pages branch) "scripts": {"gh-pages": "gh-pages -d dist"}
-- To Push to Github pages : npm run deploy
+- Install Github pages: `npm install --save-dev gh-pages`
+- Make sure vite.config.js is configured with:
+  `export default defineConfig({ base: 'https://www.amalk.au/<your-repo-name>/', plugins: [react()],})` Make sure to put the correct domain name otherwise you will get CORS errors. i.e. if the github account is configured with a custom domain use it other wise use your github username `base: 'https://<your-username>.github.io/<your-repo-name>/')`
+- Add Deployment Scripts to package.json (predeploy: runs npm run build before deploying | deploy: pushes the built dist folder to the gh-pages branch)
+  `"scripts": {"predeploy": "npm run build",  "deploy": "gh-pages -d dist"}`
+- Make sure your .gitignore does not ignore the dist/ folder if you're using git subtree.
+  However, if you're using the gh-pages package (as shown above), this step is not necessary — gh-pages doesn't require committing dist/
+- Build and Deploy to GitHub Pages, This builds the app and Publishes the dist/ folder to the gh-pages branch : `npm run deploy`
+- GitHub Settings : On your repo: Go to Settings → Pages then Choose the source as gh-pages branch → /(root)
+
+### Alternative : Using git subtree manually instead of gh-pages package
+
+Only do this if you're not using the gh-pages npm package.If you want to push manually using git subtree:
+`npm run build `
+`git add dist`
+`git commit -m "Initial dist subtree commit"`
+`git subtree push --prefix dist origin gh-pages`
