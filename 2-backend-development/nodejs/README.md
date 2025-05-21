@@ -2,31 +2,18 @@
 
 ## Nodejs Commands
 
-### Initialize the project with default settings:
+### Follow these steps to set up a clean and flexible backend environment using Node.js, Express, and optional tools like Prisma, Passport, and EJS.
 
-`npm init -y`
-
-### Install the basic Nodejs middleware: `npm install express dotenv cors`
-
-- express - Web framework to handle routes and server logic
-- dotenv - Loads environment variables from a .env file
-- cors - Enables requests from different origins (Cross-Origin Resource Sharing)
-
-### Install express-validator to validate input: `npm install express-validator`
-
-- express-validator - Validates and sanitizes user input from forms or API requests
-
-### Install EJS (Embedded JavaScript templates) into your Node.js project. EJS is a templating engine for generating HTML using JavaScript.: `npm install ejs`
-
-- Embedded JavaScript templates for server-side HTML rendering
-
-### Install pg: `npm install pg`
-
-- PostgreSQL client for Node.js to connect and query the database
-
-### Install express authentication: `npm install express-session passport passport-local bcryptjs`
-
-- express-session - Stores session data (e.g., logged-in user info)
-- passport - Authentication middleware for managing login strategies
+- Initialize an empty package.json: `npm init -y`
+- Install the basic Nodejs middleware (express - Web framework to handle routes and server logic | dotenv - Loads environment variables from a .env file | cors or Cross-Origin Resource Sharing enables requests from different origins ): `npm install express dotenv cors`
+- Express-validator to validate input. This package validates and sanitizes user input from forms or API requests: `npm install express-validator`
+- EJS (Embedded JavaScript templates). EJS or Embedded JavaScript templates for server-side HTML is a templating engine for generating HTML using JavaScript, rendering. Only required if complex/separate front end is not required i.e. React/Vite: `npm install ejs`
+- pg or PostgreSQL client for Node.js to connect and query the database, Recommended to use Prisma ORM: `npm install pg`
+- Prisma ORM for PostgreSQL database setup, Please refer the Prisma ORM setup Readme for full setup information : `npm install prisma --save-dev`
+- Prisma client for PostgreSQL database interaction, Please refer the Prisma ORM setup Readme for full setup information : `npm install @prisma/client`
+- express-session - Stores session data (e.g., logged-in user info) : `npm install express-session`
+- passport - Authentication middleware for managing login strategies : `npm install passport passport-local`
 - passport-local - Local username/password login strategy
-- bcryptjs - Hashes and verifies passwords securely
+- bcryptjs - Hashes and verifies passwords securely : `npm install bcryptjs`
+- Testing Frameworks (Recommended for larger projects) :
+`npm install --save-dev jest supertest`
