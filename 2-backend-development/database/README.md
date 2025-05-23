@@ -1,4 +1,8 @@
-# Databases
+# Databases General
+
+## Install PostgreSQL on a Ubuntu Linux machine
+
+[Installing PostgreSQL - The Odin Project](https://www.theodinproject.com/lessons/nodejs-installing-postgresql)
 
 ## Postgresql create a new database
 
