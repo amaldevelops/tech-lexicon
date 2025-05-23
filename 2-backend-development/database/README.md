@@ -9,7 +9,7 @@
 - Start the PostgreSQL shell : `psql`
 - To create a database named "messages_web_app_db" (Keep the database name as short as possible but if you require to set a longer name use underscores) : `CREATE DATABASE messages_web_app_db;`
 
-## PostgreSQL database URL Format / Connectio setup
+## PostgreSQL database URL Format / Connection setup
 
 - `postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=SCHEMA` USER: The name of your database user | PASSWORD: The password for your database user | HOST: The name of your host name (for the local environment, it is localhost) | PORT: The port where your database server is running (typically 5432 for PostgreSQL) | DATABASE: The name of the database | SCHEMA: The name of the schema inside the database | If you're unsure what to provide for the schema parameter for a PostgreSQL connection URL, you can probably omit it. In that case, the default schema name public will be used.
 - Example for Local PostgreSQL installation: `DATABASE_URL="postgresql://your_user:your_password@localhost:5432/messages_web_app_db?schema=public"` DATABASE_URL should be in the .env file
@@ -50,4 +50,7 @@
 - Set up Prisma ORM project by creating first Prisma Schema file with the following command:`npx prisma init --datasource-provider postgresql --output ../generated/prisma`. This command creates a new directory called prisma that contains a file called schema.prisma, which contains the Prisma Schema with your database connection variable and schema models. Sets the datasource to PostgreSQL and the output to a custom location, respectively. Creates the .env file in the root directory of the project, which is used for defining environment variables (such as your database connection).
 - If using git for version control, recommended to add a line to .gitignore in order to exclude the generated client from the application. In this example, to exclude the generated/prisma directory. : .gitignore => `generated/prisma/`
 - For existing database: If you are connecting to an existing database then set the `DATABASE_URL` in the .env file to point to your existing database. Then run `prisma db pull` to turn your database schema into a Prisma schema.
-- For New Database : First Create a Database
+- For New Database : First Create a Database and then set the `DATABASE_URL` in the .env file to point to your new database.
+- Edit prisma/schema.prisma according to the database scheme as required.
+- Use Prisma Migrate to apply your schema and create the tables: `npx prisma migrate dev --name init`
+- View data with Prisma Studio: `npx prisma studio`
