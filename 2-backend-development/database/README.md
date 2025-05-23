@@ -31,5 +31,11 @@
 
 ## Prisma ORM Setup
 
+[Official Prisma Relational databases JavaScript and PostgreSQL](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-node-postgresql)
+
 - Install Prisma ORM: `npm install prisma --save-dev`
--
+- invoke the Prisma CLI by prefixing it with npx: `npx prisma`
+- Set up Prisma ORM project by creating first Prisma Schema file with the following command:`npx prisma init --datasource-provider postgresql --output ../generated/prisma`
+- Above command creates a new directory called prisma that contains a file called schema.prisma, which contains the Prisma Schema with your database connection variable and schema models.
+  Sets the datasource to PostgreSQL and the output to a custom location, respectively.
+  Creates the .env file in the root directory of the project, which is used for defining environment variables (such as your database connection)
