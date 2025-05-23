@@ -1,5 +1,6 @@
 # SQL Commands
 
+[Reference, Flashcards.io](https://flashcards.github.io/sql/introduction.html)
 - SQL : SQL, Structured Query Language, is a programming language designed to manage data stored in relational databases. SQL operates through simple, declarative statements. This keeps data accurate and secure, and it helps maintain the integrity of databases, regardless of size.
 - row : A database row represents a single, implicitly structured data record in a table. In simple terms, a database table can be thought of as consisting of rows and columns.
 

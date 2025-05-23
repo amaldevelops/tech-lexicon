@@ -4,6 +4,18 @@
 
 [Installing PostgreSQL - The Odin Project](https://www.theodinproject.com/lessons/nodejs-installing-postgresql)
 
+## PostgreSQL shell (psql) Commands
+
+- Start the PostgreSQL shell : `psql`
+- View the current DB's : `\l`
+- Connect to a PostgreSQL database : `psql -U username -d dbname`
+- To connect to the db i.e to top_users table: `\c top_users`
+- List all tables in the current database : `\dt`
+- Show schema (columns, types, constraints) of a table : `\d tablename`
+- List all schemas : `\dn`
+- List all functions : `\df`
+- Quit the PostgreSQL shell : `\q`
+
 ## Postgresql create a new database
 
 - First enter the PostgreSQL shell by running `psql` in your terminal. You can view the current dbs using the `\l` command.
@@ -18,3 +30,6 @@
 - Verify that the table has been created by running `\d` from PostgreSQL shell, you should see the table in the output if you followed above instructions.
 
 ## Prisma ORM Setup
+
+- Install Prisma ORM: `npm install prisma --save-dev`
+-
