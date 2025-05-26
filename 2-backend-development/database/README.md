@@ -53,4 +53,13 @@
 - For New Database : First Create a Database and then set the `DATABASE_URL` in the .env file to point to your new database.
 - Edit prisma/schema.prisma according to the database scheme as required.
 - Use Prisma Migrate to apply your schema and create the tables: `npx prisma migrate dev --name init`
+- Whenever you update your Prisma schema, you will have to update your database schema using either `prisma migrate dev` or `prisma db push`. This will keep your database schema in sync with your Prisma schema. These commands will also run `prisma generate` under the hood to re-generate your Prisma Client.
 - View data with Prisma Studio: `npx prisma studio`
+- To get started with Prisma Client please refer below
+
+## Prisma Client Setup
+
+- To get started with Prisma Client, first install the @prisma/client package: `npm install @prisma/client`
+- Then, run prisma generate which reads your Prisma schema and generates the Prisma Client : `npx prisma generate`
+- You can now import the PrismaClient constructor from the `@prisma/client` package to create an instance of Prisma Client to send queries to your database.
+- When you run prisma generate, you are actually creating code (TypeScript types, methods, queries, ...) that is tailored to your Prisma schema file or files in the prisma directory. This means, that whenever you make changes to your Prisma schema file, you also need to update the Prisma Client. You can do this by running the `prisma generate` command.
