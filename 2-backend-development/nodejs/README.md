@@ -16,4 +16,14 @@
 - passport-local - Local username/password login strategy
 - bcryptjs - Hashes and verifies passwords securely : `npm install bcryptjs`
 - Testing Frameworks (Recommended for larger projects) :
-`npm install --save-dev jest supertest`
+  `npm install --save-dev jest supertest`
+
+## Authentication using JWT (Without using Passport.js)
+
+- Install jsonwebtoken package : `npm install jsonwebtoken`
+- Refer the Authenticator.js for authentication functions. `createJWT` custom middleware will create a JWT token that can be sent as JSON via an API END Point. When authenticating routes custom middleware `authenticateJWT` can be used.
+- To Protect a route add `authenticateJWT` middleware before all the other middleware that needs to be protected E.g: `mainRouter.get("/messaging-api/v1/contacts", authenticateJWT, getAllContacts);`
+- Client will need to save the token received as JSON in the browser local storage in the front end/browser
+- When authorizing routes with JWT token will need to be sent as an "Authorization" Headers
+- It is required to use format under HTTP Headers `Authorization : "Bearer <JWT>"`
+- E.g : `Authorization : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDQwOTcyOTYsImV4cCI6MTc0NDA5OTA5Nn0.PboRrhU7xFTzQUltX_ZA59eWs-pxXfH8JHC_tU7jIKA"`
