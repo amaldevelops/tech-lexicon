@@ -17,6 +17,7 @@
 - bcryptjs - Hashes and verifies passwords securely : `npm install bcryptjs`
 - Testing Frameworks (Recommended for larger projects) :
   `npm install --save-dev jest supertest`
+- Setting the CORS (Cross-Origin Resource Sharing. It's a mechanism that allows web applications running on one domain to access resources from a different domain. This is a crucial security feature that helps prevent unauthorized access to sensitive information) URL : `app.use(cors({ origin: process.env.CORS_URL}));`. Update the .env file `process.env.CORS_URL`. Without setting this to the correct front end URL you will get CORS errors in the browser.
 
 ## Authentication using JWT (Without using Passport.js)
 
