@@ -56,6 +56,7 @@
 - Use Prisma Migrate to apply your schema and create the tables: `npx prisma migrate dev --name init`
 - Whenever you update your Prisma schema, you will have to update your database schema using either `prisma migrate dev` or `prisma db push`. This will keep your database schema in sync with your Prisma schema. These commands will also run `prisma generate` under the hood to re-generate your Prisma Client.
 - View data with Prisma Studio: `npx prisma studio`
+- To remove all the data and recreate tables according to prisma schema (WARNING THIS WILL DELETE ALL DATA FROM YOUR POSTGRESQL DATABASE, ONLY USE THIS DURING DEVELOPMENT): `npx prisma migrate reset`
 - To get started with Prisma Client please refer below
 
 ## Prisma Client Setup
