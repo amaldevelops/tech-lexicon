@@ -1,5 +1,6 @@
 # Software Engineering Theory
 
+- [CodePath Computer Science guides on data structures, algorithms and technical interviewing](https://guides.codepath.com/compsci)
 - [Clean Code](clean-code.md)
 - [GWT - Given-When-Then](gwt.md)
 - Arrange-Act-Assert : A pattern for arranging and formatting code in UnitTest methods: Each method should group these functional sections, separated by blank lines:Arrange all necessary preconditions and inputs. Act on the object or method under test.Assert that the expected results have occurred.
