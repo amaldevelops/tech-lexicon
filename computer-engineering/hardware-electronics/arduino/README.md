@@ -1,4 +1,4 @@
-# Electronics and Arduino Reference
+# Arduino Reference
 
-<li><a href="https://1amal.github.io/engineering-reference/">Back to Main Index</a></li>
-
+- [Arduino Uno Rev3 Information](https://store-usa.arduino.cc/products/arduino-uno-rev3)
+- [Arduino programming language reference](https://docs.arduino.cc/language-reference/)
