@@ -1,0 +1,28 @@
+# System Information and Search
+
+- `sudo dmesg | more` : View the Kernel ring buffer for messages. This command is useful to understand your Linux machine boot problems. It will show you every event that happened in the start sequence. Here you could see errors with drivers or services and understand why something doesn’t work the way you want. You will get a column with the time elapsed since the beginning of the boot and a text explaining what happened. There are also normal messages when everything is fine
+- `history` : Linux store any command you type in an archive file. History is the command to use to display this list. You can also clear all the history. `history -c` Or clear one specific entry. `history -d 12`
+- `ls` : The most frequently used command in Linux to list directories
+- `clear` : Clear the terminal display
+- `echo` : Print any text that follows the command
+- `less` : Linux command to display paged outputs in the terminal
+- `man` : Access manual pages for all Linux commands
+- `uname` : Linux command to get basic information about the OS
+- `whoami` : Get the active username
+- `grep` : Search for a string within an output
+- `cal` : View a command-line calendar
+- `whereis` : Locate the binary, source, and manual pages for a command
+- `whatis` : Find what a command is used for
+- `top` : View active processes live with their system usage
+- `cat /home/pi/README.txt` Or `cat [file]` : Displays all the content of the specified file.
+- `more /var/log/syslog Or more [file]` : Displays the content of the specified file, page per page (enter or space to continue, q to quit).
+- `tail /var/log/syslog` OR `tail [file]` : Tail allows you to display the end of a file, it’s useful to check new entries in a log file.
+- `tail -n20 /var/log/syslog` : You can specify the number of lines to display with -n.
+- `tail -f /var/log/syslog` : Option -f to displays new lines in real-time.
+- `head /home/pi/file.txt` Or `head -n20 /home/pi/file.txt` Or `head [file]` : It’s the same as tail but to display the beginning of a file.
+- `grep dhcp /var/log/syslog or grep [string]` : Grep is a powerful tool to search string in a text. You can use it to search something in a file or to filter the output of another command or script. `cat /var/log/syslog | grep dhcp /home/pi/myscript.sh | grep error ls -latr | grep php` Lot of options to use with grep, like regular expressions or options to display lines before (-B), after (-A) or around (-C) the search string. You can also use -v to display everything except the input string. `grep 'dhcp|dns' /var/log/syslog grep -A2 -B4 'Fatal error' /var/log/apache/error.log grep -v 'Notice' /var/log/apache/error.log`
+- `sudo lshw` : View hardware info
+- `sudo gnome-text-editor /etc/systemd/logind.conf` : Change the Laptop Lid close behavior : find out the line #HandleLidSwitch=suspend and change it to one of following : HandleLidSwitch=lock – lock when lid closed. HandleLidSwitch=ignore – do nothing, some laptops will disconnect Wi-Fi. HandleLidSwitch=poweroff – shutdown. HandleLidSwitch=hibernate – hibernate Ubuntu. restart your computer
+- `upower -i /org/freedesktop/UPower/devices/battery_BAT0` : Check the Laptop battery status
+- `sudo dmidecode -t system | grep Serial` : Lenovo Thinkpad Find serial number
+- `sudo dmidecode -t baseboard | grep Serial`: To find the baseboard serial number:

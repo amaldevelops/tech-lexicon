@@ -1,0 +1,44 @@
+# Administration
+
+- `sudo apt update && sudo apt upgrade` : To refresh and update software in Debian / Ubuntu in one command
+- `sudo apt install ./deb_file`: To manually install Deb files, command for same directory where the deb file is located
+- `snap refresh` : Update the Snap packages
+- `df -h` : You can display disk usage in a more human-readable format
+- `du -h` : The du command displays disk usage. This tool can display disk usage for individual directories in Linux, giving you a finer-grained view of your disk usage. Use it to display the amount of space used by your current directory
+- `sudo` : Command to escalate privileges in Linux
+- `service` : Linux command to start and stop services
+- `ps` : Display active processes
+- `kill , killall`: Kill active processes by process ID or name
+- `df` : Display disk filesystem information
+- `mount` : Mount file systems in Linux
+- `chmod` : Command to change file permissions
+- `export` : Export environment variables in Linux
+- `chown` : Command for granting ownership of files or folders
+- `apt, pacman, yum, rpm` : Package managers depending on the distro
+- `alias` : Create custom shortcuts for your regularly used commands
+- `dd` : Majorly used for creating bootable USB sticks
+- `useradd and usermod` : Add new user or change existing users data
+- `passwd` : Create or update passwords for existing users
+- `sudo killall openvpn` : Close OpenVpn
+- `crontab -l , crontab -e` : Cron is a tool to schedule tasks on a Raspberry Pi / Linux Machines. Crontab is the file where you enter lines for each task to run. `-l` option to display lines. `-e` option to edit lines. You can use sudo before to schedule tasks to run with root privileges.
+- `screen -s [name] , screen -r [name]`: This tool allows you to let something run in the background even if you close your session. `-s` option to start a new screen with the following name. `-r` option to resume a running screen with this name. You can forget the name if you want, an ID will be generated, use screen `-r` to find it and screen `-r [ID]` to resume it. With only one screen running, screen `-r` will resume it directly.
+- `lsof` : lsof stands for “List open files”. This command displays all files open on your Raspberry Pi. This can be useful to know why you can’t edit a file, or which file lock the unmount process.
+- `watch` : If you are waiting for something, in a file or directory, the watch command can help you to monitor what happens. This will execute the same command every two seconds. You can also change the refresh rate with the `-n` option. `watch -n10 date` watch date watch ls -latr watch cat output.txt
+- sudo apt remove [tree] : You can uninstall a package with apt remove, The user is prompted to confirm the removal. Again, the -y flag will auto-confirm.
+- `sudo apt purge tree` : You can also choose to completely remove the package and its associated configuration files with apt purge
+- Check if xterm package exists: `dpkg -l | grep xtermIf xterm` package does not exist , `install it sudo apt install xterm`
+- `sudo update-alternatives --config x-terminal-emulator` : Set lxterminal as x-terminal-emulator by running the following command
+- `sudo apt remove vim` `apt remove [package]` : Removes a previously selected package.
+- `sudo apt search myadmin` `sudo apt search php` `apt search [search]` : Searches for a package name in the packages list
+- `dpkg -l` `dpkg -l | grep myadmin` `dpkg -l` : Lists all installed packages on your system: You can use grep to find a specific package.
+- `sudo reboot` : This command will restart the PC immediately.
+- `shutdown -h now` : This is to stop the Raspberry Pi immediately. You can replace “now” by a specific time (shutdown -h 12:05). Don’t use the power switch to stop your Raspberry, you should do it properly by using this command.
+- `shutdown -h 0` : Shutdown computer immediately
+- `ps aux` : This command displays all running process on your Raspberry Pi.
+  `kill 12345` `kill [pid]` : The kill command allows you to terminate a process. You’ll need the process ID to do this.
+- `kill -9 12345` :Sometime you may need to use the -9 option to force all related commands to stop. For example, if you run 20 commands in a script and kill it, it’ll continue to the next line, not exit the program, except if you use the -9 option.
+- `killall php` : Killall to stop all occurrences of a program.
+  `htop` : This tool is an alternative to top. It’s more user-friendly than top, with colors and dynamic load bars.
+- `df` `df -h` : Displays the partition list, with the disk space used and available for each one.
+- `/usr/bin/dm-tool lock` : Lock screen
+- `ps -u amal` : You can also display process started by a specific user:
