@@ -3,6 +3,10 @@
 ## Index
 
 - [Software Engineering](./computer-engineering/README.md)
+  - [AI & ML](./computer-engineering/ai-ml/)
+  - [Hardware & Electronics](./computer-engineering/hardware-electronics/)
+  - [Networking & Cybersecurity/](./computer-engineering/networking-cybersecurity/)
+  - [Operating Systems](./computer-engineering/operating-systems/)
 - [Software Development](./software-development/README.md)
   - [Back End](./software-development/backend/)
     - [Database](./software-development/backend/database/)
@@ -15,9 +19,16 @@
     - [HTML](./software-development/frontend/html/)
     - [Assets](./software-development/frontend/assets/)
   - [DevOps and Cloud](./software-development/devops-cloud/)
+    - [Render.com](./software-development/devops-cloud/cloud-providers/render-com.md)
+    - [Neon.tech](./software-development/devops-cloud/cloud-providers/neon-tech.md)
   - [Software Testing](./software-development/testing/)
+    - [Jest](./software-development/testing/jest/)
   - [Software Engineering Theory](./software-development/theory/)
+    - [Algorithms](./software-development/theory/algorithms/)
+    - [Data Structures](./software-development/theory/data-structures/)
   - [Tools](./software-development/tools/)
+    - [VS Code](./software-development/tools/vscode/)
+    - [Postman](./software-development/tools/postman.md)
 
 ## Intro
 
