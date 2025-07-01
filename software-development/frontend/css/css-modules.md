@@ -1,11 +1,12 @@
 # CSS Modules in React
-[How to Style React Components Using CSS Modules](https://www.makeuseof.com/react-components-css-modules-style/)
 
-[Vite CSS Module Documentation](https://vite.dev/guide/features#css-modules)
+- [How to Style React Components Using CSS Modules](https://www.makeuseof.com/react-components-css-modules-style/)
 
-Any CSS file ending with .module.css is considered a CSS modules file. Importing such a file will return the corresponding module object.
+- [Vite CSS Module Documentation](https://vite.dev/guide/features#css-modules)
 
-For example, create Button.js as follows;
+- Any CSS file ending with .module.css is considered a CSS modules file. Importing such a file will return the corresponding module object. For example, create Button.js as follows;
+
+```js
 
     export default function Button() {
             return (
@@ -13,9 +14,11 @@ For example, create Button.js as follows;
             )
         }
 
+```
 
-Next, create a new file called Button.module.css and add the following
+- Next, create a new file called Button.module.css and add the following
 
+```css
     .btn {
         width: 90px;
         height: 40px;
@@ -24,8 +27,11 @@ Next, create a new file called Button.module.css and add the following
         border: none;
     }
 
-To use this class in the Button component, import it as styles and reference it in the class name of the button element like this:
+```
 
+- To use this class in the Button component, import it as styles and reference it in the class name of the button element like this:
+
+```js
     import styles from "./Button.module.css"
     
     export default function Button() {
@@ -34,8 +40,11 @@ To use this class in the Button component, import it as styles and reference it 
         )
 }
 
-In CSS Modules, each class should be scoped to prevent it from applying globally. However, if you write general selectors like ul, li, or a without any class selectors, they’ll behave as global styles. To scope these styles to a particular component, you'll need to wrap them in a CSS class specific to the component. Example for a simple Navigation bar:
+```
 
+- In CSS Modules, each class should be scoped to prevent it from applying globally. However, if you write general selectors like ul, li, or a without any class selectors, they’ll behave as global styles. To scope these styles to a particular component, you'll need to wrap them in a CSS class specific to the component. Example for a simple Navigation bar:
+
+```css
     .menuContainer {
     list-style-type: none;
     margin: 0;
@@ -64,3 +73,4 @@ In CSS Modules, each class should be scoped to prevent it from applying globally
     background-color: #04AA6D;
     }
  
+```
