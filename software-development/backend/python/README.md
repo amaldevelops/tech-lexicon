@@ -1,4 +1,3 @@
 # Python Reference
 
-<li><a href="https://1amal.github.io/engineering-reference/">Back to Main Index</a></li>
-
+- [Python Basics](python-basics.md)
