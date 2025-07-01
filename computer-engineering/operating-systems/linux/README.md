@@ -7,3 +7,4 @@
 - [Linux : Commands Firmware](linux-commands-firmware.md)
 - [Raspberry Pi commands](raspberry-pi-commands.md)
 - [The Unix Shell](https://swcarpentry.github.io/shell-novice/)
+- [Raspberry Pi](/computer-engineering/hardware-electronics/raspberrypi/)
