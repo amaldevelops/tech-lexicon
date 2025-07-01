@@ -1,4 +1,9 @@
 # JavaScript Reference
 
-<li><a href="https://1amal.github.io/engineering-reference/">Back to Main Index</a></li>
+## Index
 
+- [Setup JavaScript](setup-js-static-site.md)
+
+## External Links
+
+- [Prevent default](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
