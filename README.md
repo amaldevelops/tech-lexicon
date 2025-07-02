@@ -2,11 +2,19 @@
 
 ## Index
 
-- [Software Engineering](./computer-engineering/README.md)
+- [Computer Engineering](./computer-engineering/README.md)
   - [AI & ML](./computer-engineering/ai-ml/)
   - [Hardware & Electronics](./computer-engineering/hardware-electronics/)
+    - [Raspberry Pi](./computer-engineering/hardware-electronics/raspberrypi/)
+    - [Arduino](./computer-engineering/hardware-electronics/arduino/)
+    - [Computer Hardware](./computer-engineering/hardware-electronics/computer-hardware/)
+    - [Electronics](./computer-engineering/hardware-electronics/computer-hardware/)
   - [Networking & Cybersecurity/](./computer-engineering/networking-cybersecurity/)
+    - [Cybersecurity/](./computer-engineering/networking-cybersecurity/cybersecurity/)
+    - [Networking](./computer-engineering/networking-cybersecurity/networking/)
   - [Operating Systems](./computer-engineering/operating-systems/)
+    - [Linux](./computer-engineering/operating-systems/linux/)
+    - [Microsoft Windows](./computer-engineering/operating-systems/microsoft-windows/)
 - [Software Development](./software-development/README.md)
   - [Back End](./software-development/backend/)
     - [Database](./software-development/backend/database/)
