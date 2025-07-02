@@ -9,6 +9,7 @@
 - `service` : Linux command to start and stop services
 - `ps` : Display active processes
 - `kill , killall`: Kill active processes by process ID or name
+-  `sudo killall nautilus` : This will kill frozen Nautilus file manager
 - `df` : Display disk filesystem information
 - `mount` : Mount file systems in Linux
 - `chmod` : Command to change file permissions
