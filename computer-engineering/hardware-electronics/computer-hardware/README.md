@@ -1,4 +1,3 @@
-# Electronics and Arduino Reference
+# Computer Hardware
 
-<li><a href="https://1amal.github.io/engineering-reference/">Back to Main Index</a></li>
 
