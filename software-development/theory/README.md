@@ -18,3 +18,4 @@ Is a semi-structured way to write down test cases. They can either be tested man
 - [Clean Code](clean-code.md)
 - [GWT - Given-When-Then](gwt.md)
 - [CodePath Computer Science guides on data structures, algorithms and technical interviewing](https://guides.codepath.com/compsci)
+- [Five Common Mistakes Software Engineers Make Solving the IRC Client Coding Challenge, By John Crickett](mistakes-to-avoid.md)
