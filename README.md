@@ -25,7 +25,7 @@
       - [React](./software-development/frontend/javascript/react/)
     - [CSS](./software-development/frontend/css/)
     - [HTML](./software-development/frontend/html/)
-    - [Assets](./software-development/frontend/assets/)
+    - [Front End assets](./software-development/frontend/assets/)
   - [DevOps and Cloud](./software-development/devops-cloud/)
     - [Render.com](./software-development/devops-cloud/cloud-providers/render-com.md)
     - [Neon.tech](./software-development/devops-cloud/cloud-providers/neon-tech.md)
@@ -41,6 +41,7 @@
   - [Tools](./software-development/tools/)
     - [VS Code](./software-development/tools/vscode/)
     - [Postman](./software-development/tools/postman.md)
+    - [Git](./software-development/tools/git/)
 
 ## Intro
 
