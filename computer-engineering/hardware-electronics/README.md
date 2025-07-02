@@ -6,4 +6,4 @@
   - [Arduino](./arduino/)
   - [Computer-Hardware](./computer-hardware/)
   - [Electronics](./electronics/)
-  - [Raspberry Pi](./raspberrypi/)
+  - [Raspberry Pi](./raspberry-pi/)
