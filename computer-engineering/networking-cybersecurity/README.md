@@ -1,4 +1,6 @@
-# Networking and Cybersecurity Reference
+# Networking and Cybersecurity
 
-<li><a href="https://1amal.github.io/engineering-reference/">Back to Main Index</a></li>
+## Index
 
+- [Networking](./networking/)
+- [Cybersecurity](./cybersecurity/)
