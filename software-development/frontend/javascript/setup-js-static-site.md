@@ -1,18 +1,19 @@
 # JavaScript: Setup for static site
 
-* You can place any number of scripts in an HTML document.
+- You can place any number of scripts in an HTML document.
+- Recommended to put JavaScript in external JavaScript file and link to the HTML document.  
+- Internal scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt; section of an HTML page, or in both.
 
-* Recommended to put JavaScript in external JavaScript file and link to the HTML document.  
+## External JavaScript
 
-* Internal scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt; section of an HTML page, or in both.
+JavaScript files have the file extension .js. To use an external script, put the name of the script file in the src (source) attribute of &lt;script&gt; tag as for the following example:
 
-External JavaScript: JavaScript files have the file extension .js. To use an external script, put the name of the script file in the src (source) attribute of &lt;script&gt; tag as for the following example:
-
-    
-    <script src="myScript.js"> </script>
+```javascript
+<script src="myScript.js"> </script>
+```
 
 Example for &lt;head&gt; section of an HTML page.
-
+```html
     <!DOCTYPE html>
     <html>
     <head>
@@ -25,9 +26,10 @@ Example for &lt;head&gt; section of an HTML page.
     <body>
     </body>
     </html>
+```
+- Example for &lt;body&gt; section of an HTML page.
 
-Example for &lt;body&gt; section of an HTML page.
-
+```html
     <!DOCTYPE html>
     <html>
     <body>
@@ -39,3 +41,4 @@ Example for &lt;body&gt; section of an HTML page.
     </script>
     </body>
     </html>
+```
