@@ -20,6 +20,7 @@ You can manage versions easily using nvm.
 - `nvm install --lts` : Install the latest version of Node.js LTS (Long-Term Support)version
 - `nvm use --lts` : Use the installed latest LTS (Long-Term Support) version
 - `nvm --version` : Check for nvm version
+- `source ~/.bashrc` : Restart a clean shell
 - `nvm install 18` : Install specific version
 - `nvm alias default 22` : Set default version
 - `nvm use 18` : Use specific version
