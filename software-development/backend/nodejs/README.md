@@ -2,13 +2,29 @@
 
 ## Nodejs Commands
 
-## Install/Update Node.js
+## New Installation
 
-- [Go to Node.js official site](https://nodejs.org/en/download/current) and choose the latest version and follow the instructions on the official guide. Alternatively follow below steps which is for Node v24.
+- Use Node.js LTS (Long-Term Support) — recommended unless you require cutting edge features in that case use the latest version (Not recommended as every six months support is discontinued [Node.js Releases](https://nodejs.org/en/about/previous-releases)). 
+- [Go to Node.js official site](https://nodejs.org/en/download/current) and choose the latest version and follow the instructions on the official guide. Alternatively follow below steps which is for Node v22 LTS.
 - Download and install nvm, i.e.: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash`
-- Download and install Node.js: `nvm install 24`
+- Download and install Node.js: `nvm install 22`
 - Verify the Node.js version: `node -v` and `nvm current`
 - Verify npm version : `npm -v`
+
+## Update Node.js
+
+You can manage versions easily using nvm.
+
+- `nvm ls` : List installed versions
+- `nvm ls-remote` : List available versions
+- `nvm install --lts` : Install the latest version of Node.js LTS (Long-Term Support)version
+- `nvm use --lts` : Use the installed latest LTS (Long-Term Support) version
+- `nvm --version` : Check for nvm version
+- `nvm install 18` : Install specific version
+- `nvm alias default 22` : Set default version
+- `nvm use 18` : Use specific version
+- `nvm uninstall 22.7.0` : Uninstall a version
+- `nvm exec 22 node app.js` : Run file with specific version
 
 ### Follow these steps to set up a clean and flexible backend environment using Node.js, Express, and optional tools like Prisma, Passport, and EJS.
 
