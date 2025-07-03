@@ -1,5 +1,13 @@
 # RaspberryPi
 
+## Index
+
+- [General Linux commands](/computer-engineering/operating-systems/linux/README.md)
+- [Raspberry Pi : Firmware](./raspberry-pi-firmware.md)
+- [Raspberry Pi : Hardware](./raspberry-pi-hardware.md)
+
+## Commands
+
 - [Official Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/)
 - [Raspberry Pi hardware information](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html)
 - [Raspberry Pi OS documentation](https://www.raspberrypi.com/documentation/computers/os.html)
@@ -8,13 +16,50 @@
 - You can manually set lxterminal as x-terminal-emulator by running the following command
   `sudo update-alternatives --config x-terminal-emulator`
 - `sudo killall openvpn`
-- `argonone-config` : Argoneone Case fan control configuration curl https://download.argon40.com/argon1.sh | bash : Install ArgonOne fancontrol script
-- `pinout` : A handy reference can be accessed on the Raspberry Pi by opening a terminal window and running the command pinout
-- `sudo usermod -a -G gpio [username]` : In order to use the GPIO ports your user must be a member of the gpio group. The pi user is a member by default, other users need to be added manually.
-- `sudo rpi-update` and then use `sudo reboot`
-- `rpi-update` : will download the latest pre-release version of the linux kernel, its matching modules, device tree files, along with the latest versions of the VideoCore firmware. It will then install these files to relevant locations on the SD card, overwriting any previous versions.
-- `sudo apt-get update sudo apt install --reinstall libraspberrypi0 libraspberrypi-{bin,dev,doc} raspberrypi-bootloader raspberrypi-kernel` If you have done an rpi-update and things are not working as you wish, if your Raspberry Pi is still bootable you can return to the stable release using above command
-- `sudo raspi-config` : Configure Raspberry Pi
-- `sudo rpi-update` : Only use this if you know what you do. This command will update everything on your Raspberry Pi (firmware, packages, …) and can potentially break something.
-- `vcgencmd measure_temp` : Displays the current CPU temperature.
-- `raspi-gpio` : This command allows you to manage the GPIO pins of the Raspberry Pi. You can either set or get a value. `raspi-gpio get 20` or `raspi-gpio set 20 a5` `raspi-gpio set 20 op pn dh`
+
+## Creating a Virtual Desktop
+
+If your Raspberry Pi is headless (i.e., not plugged into a monitor) or controlling a robot, it is unlikely to be running a graphical desktop.
+
+**VNC Server** can create a virtual desktop for you, giving you graphical remote access on demand. This virtual desktop exists only in your Raspberry Pi’s memory.
+
+### To create and connect to a virtual desktop:
+
+- On your Raspberry Pi (using Terminal or via SSH), run:
+
+  - `vncserver`
+  - Make note of the IP address/display number that VNC Server prints (e.g. `192.167.5.149:1`)
+
+- On the device you’ll use to take control, enter this IP and display number into **VNC Viewer**.
+
+### To destroy a virtual desktop:
+
+- Run the following command:
+  - `vncserver -kill :<display-number>`
+
+This will stop the virtual desktop and disconnect any existing sessions.
+
+## Install Docker
+
+### Update and Upgrade System
+
+```bash
+sudo apt-get update && sudo apt-get upgrade
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker pi
+
+sudo docker version
+sudo docker info
+
+docker run hello-world
+
+sudo docker pull cambarts/webgoat-8.0-rpi
+sudo docker run -p 8080:8080 -t cambarts/webgoat-8.0-rpi
+
+http://192.168.20.16:8080/WebGoat
+
+Username: webgoatpi
+Password: Kali2021
+```

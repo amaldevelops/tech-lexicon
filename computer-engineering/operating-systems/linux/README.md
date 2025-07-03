@@ -1,6 +1,6 @@
 # Linux Reference
 
-- [Linux : Basic commands](linux-commands.md)
+- [Linux : General commands](./linux-general-commands.md)
 - [Linux : File, Directory and Storage operations](linux-file-operation.md)
 - [Linux : Admin](linux-admin.md)
 - [Linux : Networking](linux-networking.md)
