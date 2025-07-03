@@ -2,6 +2,14 @@
 
 ## Nodejs Commands
 
+## Install/Update Node.js
+
+- [Go to Node.js official site](https://nodejs.org/en/download/current) and choose the latest version and follow the instructions on the official guide. Alternatively follow below steps which is for Node v24.
+- Download and install nvm, i.e.: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash`
+- Download and install Node.js: `nvm install 24`
+- Verify the Node.js version: `node -v` and `nvm current`
+- Verify npm version : `npm -v`
+
 ### Follow these steps to set up a clean and flexible backend environment using Node.js, Express, and optional tools like Prisma, Passport, and EJS.
 
 - Initialize an empty package.json: `npm init -y`
