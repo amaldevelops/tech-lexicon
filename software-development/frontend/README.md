@@ -16,6 +16,10 @@
   - [Icons](./assets/icons/)
   - [Images](./assets/images/)
 
+## General
+
+- `npm init -y` : Initialize an empty package.json
+
 ## Links
 
 - [Mark Down guide](https://www.markdownguide.org/basic-syntax/)
