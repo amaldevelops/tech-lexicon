@@ -1,5 +1,9 @@
 # Typescript
 
+## Index
+
+- [Tutorial](./syntax/)
+
 ## Setup
 
 - [Official Microsoft download TypeScript instructions](https://www.typescriptlang.org/download/)
