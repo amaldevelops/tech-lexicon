@@ -2,7 +2,8 @@
 
 ## Index
 
-- [Setup JavaScript](setup-js-static-site.md)
+- [The main differences between **var**, **let**, and **const**](./let-const-var.md)
+- [Setup JavaScript](./setup-js-static-site.md)
 - [React](./react/README.md)
 - [Typescript](./typescript/)
 
