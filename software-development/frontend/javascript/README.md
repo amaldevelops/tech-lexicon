@@ -3,6 +3,7 @@
 ## Index
 
 - [The main differences between **var**, **let**, and **const**](./let-const-var.md)
+- [Closures](./closures.md)
 - [Setup JavaScript](./setup-js-static-site.md)
 - [React](./react/README.md)
 - [Typescript](./typescript/)
