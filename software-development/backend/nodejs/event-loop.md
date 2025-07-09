@@ -1,12 +1,12 @@
 # What is the Event Loop in Node.js and how does it work
 
-The **Event Loop** in Node.js is the core mechanism that enables **asynchronous, non-blocking I/O** operations, allowing Node.js to handle many tasks concurrently on a single thread without blocking the execution of other code[^2][^4][^6].
+The **Event Loop** in Node.js is the core mechanism that enables **asynchronous, non-blocking I/O** operations, allowing Node.js to handle many tasks concurrently on a single thread without blocking the execution of other code[^2] [^4] [^6].
 
 ### How the Event Loop Works
 
-1. **Initialization**: When a Node.js application starts, it runs all the synchronous code first and registers asynchronous tasks (like timers, file I/O, or network requests)[^1][^4].
+1. **Initialization**: When a Node.js application starts, it runs all the synchronous code first and registers asynchronous tasks (like timers, file I/O, or network requests)[^1] [^4].
 2. **Delegation to System APIs**: Asynchronous operations are offloaded to system APIs or a thread pool (via the `libuv` library), freeing up the main thread to continue executing other code[^4].
-3. **Event Queues**: When these async tasks complete, their callbacks are placed in the **event queue** (or other specialized queues like the microtask queue)[^2][^5].
+3. **Event Queues**: When these async tasks complete, their callbacks are placed in the **event queue** (or other specialized queues like the microtask queue)[^2] [^5].
 4. **Event Loop Phases**: The event loop continuously cycles through several phases, each handling a specific type of callback or event[^3] [^5]:
     - **Timers**: Executes callbacks scheduled by `setTimeout()` and `setInterval()`.
     - **I/O Callbacks**: Handles most I/O events, excluding close events, timers, and `setImmediate()`.
@@ -14,7 +14,7 @@ The **Event Loop** in Node.js is the core mechanism that enables **asynchronous,
     - **Poll**: Retrieves new I/O events and executes their callbacks.
     - **Check**: Executes callbacks scheduled by `setImmediate()`.
     - **Close Callbacks**: Handles closed connections and resources.
-5. **Microtasks and Priorities**: Microtasks (such as those from Promises or `process.nextTick()`) are executed after each phase, before the event loop moves to the next phase. Microtasks have higher priority than regular callbacks[^2][^5].
+5. **Microtasks and Priorities**: Microtasks (such as those from Promises or `process.nextTick()`) are executed after each phase, before the event loop moves to the next phase. Microtasks have higher priority than regular callbacks[^2] [^5].
 6. **Repeat**: The event loop repeats these phases as long as there are tasks to process. The process exits when there is no more work left in the event loop[^3].
 
 ### Key Points
