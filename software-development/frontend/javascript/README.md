@@ -10,6 +10,7 @@
   - [Setup JavaScript](./setup-js-static-site.md)
 - [React](./react/README.md)
   - [Virtualdom](./react/virtualdom.md)
+  - [Class vs Functional components](./react/class-vs-functional-components.md)
 - [Typescript](./typescript/)
 
 ## External Links
