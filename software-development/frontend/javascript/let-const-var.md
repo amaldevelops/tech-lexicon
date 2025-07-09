@@ -34,9 +34,7 @@ The main differences between **var**, **let**, and **const** in JavaScript lie i
 - Use **`let`** if you need to reassign a variable later.
 - Avoid using **`var`** in modern JavaScript because its function scope and hoisting behavior can lead to confusing bugs and less predictable code.
 
-This summary is based on the latest JavaScript standards (ES6 and later) and reflects best practices for writing maintainable and predictable code[^1][^2][^5][^6].
-
-<div style="text-align: center">⁂</div>
+This summary is based on the latest JavaScript standards (ES6 and later) and reflects best practices for writing maintainable and predictable code[^1] [^2] [^3] [^4] [^5] [^6].
 
 [^1]: https://www.reddit.com/r/learnjavascript/comments/tomn5z/difference_between_var_let_and_const/
 
