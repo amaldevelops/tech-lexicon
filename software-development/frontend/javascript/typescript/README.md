@@ -3,6 +3,7 @@
 ## Index
 
 - [Tutorial](./syntax/)
+- [Typescript Basics](./type-script-basics.md)
 
 ## Setup
 

@@ -14,6 +14,8 @@
   - [React Hooks](./react/react-hooks.md)
   - [React state management](./react/react-state-management.md)
 - [Typescript](./typescript/)
+  - [Tutorial](./typescript/syntax/)
+  - [Typescript Basics](./typescript/type-script-basics.md)
 
 ## External Links
 
