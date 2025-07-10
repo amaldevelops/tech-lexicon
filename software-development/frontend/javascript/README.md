@@ -3,6 +3,7 @@
 ## Index
 
 - [JavaScript](./README.md)
+  - [JavaScript Basics](./javascript-basics.md)
   - [The main differences between **var**, **let**, and **const**](./let-const-var.md)
   - [Closures](./closures.md)
   - [Asynchronous vs Synchronous](./asynchronous-vs-synchronous.md)
