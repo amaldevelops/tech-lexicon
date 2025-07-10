@@ -1,5 +1,28 @@
 # Python Basics
 
+# Python
+
+## What is Python?
+
+Python is a high-level, general-purpose programming language known for its clear, readable syntax and versatility. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is widely used for web development, automation, data analysis, artificial intelligence, scientific computing, scripting, and more.
+
+## Key Features
+
+- **Easy to Learn and Use:** Python’s syntax is simple and intuitive, making it accessible for beginners and efficient for experienced developers.
+- **Readable Syntax:** Code readability is a core philosophy, enforced by significant indentation instead of braces or semicolons.
+- **Dynamically Typed:** Variable types are determined at runtime, allowing for flexible and concise code.
+- **Interpreted Language:** Python code is executed line by line, which simplifies debugging and accelerates development.
+- **Object-Oriented:** Supports classes, inheritance, encapsulation, and polymorphism, promoting modular and reusable code.
+- **Multi-Paradigm:** Allows procedural, object-oriented, and functional programming styles.
+- **Extensive Standard Library:** Includes modules for file I/O, math, networking, web services, and more, reducing the need for external dependencies.
+- **Cross-Platform:** Python code runs on Windows, macOS, Linux, and more without modification.
+- **Free and Open Source:** Available for anyone to use, modify, and distribute, with a large, active community.
+- **GUI Programming Support:** Libraries like Tkinter, PyQt, and Kivy enable building desktop applications with graphical interfaces.
+- **Automatic Memory Management:** Handles memory allocation and garbage collection automatically.
+- **Strong and Dynamic Typing:** Enforces type safety while allowing type flexibility at runtime.
+
+## Example: Basic Python Code
+
 - Python Indentation: Indentation refers to the spaces at the beginning of a code line. Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code.
 - `#`: Add in front of the code for commenting out single line of code
   `"""` : Use triple quotes for multiline comments
