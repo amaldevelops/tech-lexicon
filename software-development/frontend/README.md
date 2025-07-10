@@ -11,6 +11,8 @@
   - [CSS Styled Components](./css/styled-components.md)
   - [Link CSS to Html files](./css/linking-to-html.md)
 - [HTML](./html/)
+  - [HTML Basics](./html/html-basics.md)
+- [Markdown](./markdown/)
 - [Front End Assets](./assets/)
   - [Fonts](./assets/)
   - [Icons](./assets/icons/)
