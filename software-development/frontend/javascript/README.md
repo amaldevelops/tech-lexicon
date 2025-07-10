@@ -12,6 +12,7 @@
   - [Virtualdom](./react/virtualdom.md)
   - [Class vs Functional components](./react/class-vs-functional-components.md)
   - [React Hooks](./react/react-hooks.md)
+  - [React state management](./react/react-state-management.md)
 - [Typescript](./typescript/)
 
 ## External Links

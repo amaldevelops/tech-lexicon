@@ -1,5 +1,12 @@
 # React
 
+## Index
+
+- [React Hooks](./react-hooks.md)
+- [Class vs functional components](./class-vs-functional-components.md)
+- [React state management](./react-state-management.md)
+- [Virtual Dom](./virtualdom.md)
+
 ## Scaffold a React App using Vite
 
 - Please make sure that you are using the LTS version of Node , otherwise errors may occur
