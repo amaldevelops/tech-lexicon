@@ -2,6 +2,7 @@
 
 ## Index
 
+- [React Basics](./react-basics.md)
 - [React Hooks](./react-hooks.md)
 - [Class vs functional components](./class-vs-functional-components.md)
 - [React state management](./react-state-management.md)
