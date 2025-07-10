@@ -1,6 +1,7 @@
 # CSS Reference
 
-- [Linking CSS file to HTML](linking-to-html.md)
+- [CSS Basics](./css-basics.md)
+  - [Linking CSS file to HTML](linking-to-html.md)
 - [Styled Components](styled-components.md)
 - [CSS Modules](css-modules.md)
 - [W3 Schools CSS Reference](https://www.w3schools.com/cssref/index.php)
