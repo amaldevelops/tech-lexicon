@@ -1,9 +1,8 @@
 # Networking
 
-## Links
+## Index
 
-- [Cisco Configure IP Addresses and Unique Subnets for New Users](https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html)
-- 
+- [Networking basics](./networking-basics.md)
 
 ## IP Ranges
 
@@ -12,3 +11,6 @@
 - Class B: 255.255.0.0
 - Class C: 255.255.255.0
 
+## External Links
+
+- [Cisco Configure IP Addresses and Unique Subnets for New Users](https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html)
