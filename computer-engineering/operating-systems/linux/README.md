@@ -1,5 +1,6 @@
 # Linux Reference
 
+- [How Linux work](./how-linux-work.md)
 - [Linux : General commands](./linux-general-commands.md)
 - [Linux : File, Directory and Storage operations](linux-file-operation.md)
 - [Linux : Admin](linux-admin.md)
