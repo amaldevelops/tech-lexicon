@@ -2,6 +2,7 @@
 
 ## Index
 
+- [Raspberry Pi basics](./raspberrypi-basics.md)
 - [General Linux commands](/computer-engineering/operating-systems/linux/README.md)
 - [Raspberry Pi : Firmware](./raspberry-pi-firmware.md)
 - [Raspberry Pi : Hardware](./raspberry-pi-hardware.md)
