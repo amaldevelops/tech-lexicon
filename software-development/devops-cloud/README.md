@@ -2,6 +2,7 @@
 
 ## Index
 
+- [Devops Basics](./devops-basics.md)
 - [CI/CD Pipelines](./cicd-pipelines/)
 - [Cloud Providers](./cloud-providers/)
   - [AWS](./cloud-providers/aws/)
