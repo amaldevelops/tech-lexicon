@@ -2,4 +2,4 @@
 
 ## Index
 
-- []()
+- [GCP Basics](./gcp-basics.md)
