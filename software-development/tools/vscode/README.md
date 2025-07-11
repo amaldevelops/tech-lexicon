@@ -1,9 +1,12 @@
 # VS Code
 
-- Markdown: To switch between views, press Ctrl+Shift+V in the editor. You can view the preview side-by-side (Ctrl+K V) with the file you are editing and see changes reflected in real-time as you edit. Markdown and [Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
+## Index
+
+- [VS code basics](./vscode-basics.md)
 
 ## VS Code: Keyboard shortcuts
 
+- `Ctrl+Shift+V` : Markdown, to switch between views, press in the editor. You can view the preview side-by-side `Ctrl+K V` with the file you are editing and see changes reflected in real-time as you edit.
 - `code .` : To Open VSCode from the same folder
 - `Ctrl+Shift+P, F1` : Show Command Palette
 - `Ctrl+K Ctrl+S` : Keyboard Shortcuts
@@ -22,3 +25,7 @@
 ## VS Code Extensions
 
 - `ext install oleg-shilo.favorites` : Favorites Manager
+
+### External Links
+
+- Markdown and [Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
