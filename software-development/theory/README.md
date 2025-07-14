@@ -7,6 +7,7 @@
 - [Data Structures](./data-structures/)
 - [Clean Code](clean-code.md)
 - [GWT - Given-When-Then](gwt.md)
+- [Domain Driven Design](./domain-driven-design.md)
 - [Five Common Mistakes Software Engineers Make Solving the IRC Client Coding Challenge, By John Crickett](mistakes-to-avoid.md)
 
 ## Arrange-Act-Assert
