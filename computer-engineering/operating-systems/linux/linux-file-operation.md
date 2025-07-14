@@ -1,5 +1,7 @@
 # Linux: File, Directory and Storage operations
 
+- `lsblk -l` : Mounted drives
+- `sudo udisksctl power-off -b /dev/sda` : Turn off external HDD power
 - `nautilus admin:/`: Run Nautilus File Manager with root privileges (use `sudo -i` and `CTRL+D` to return to normal user)
 - `pwd` : Print working directory command in Linux
 - `cd` : Linux command to navigate through directories
