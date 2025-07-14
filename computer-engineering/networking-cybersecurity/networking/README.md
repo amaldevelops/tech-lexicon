@@ -3,6 +3,7 @@
 ## Index
 
 - [Networking basics](./networking-basics.md)
+- [Mobile Networks generations](./mobile-networks-generations.md)
 - [HTTP request](./http-request.md)
 
 ## IP Ranges
