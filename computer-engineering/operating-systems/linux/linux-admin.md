@@ -7,9 +7,9 @@
 - `sudo` : Command to escalate privileges in Linux
 - `sudo [command]` : Execute `[command]` with elevated privileges
 - `sudo su` : Switch to root user shell (be careful!)
-- `sudo apt-get install [package]` : Install a package
-- `sudo apt-get update` : Update the list of packages
-- `sudo apt-get upgrade` : Upgrade installed packages (run after update)
+- `sudo apt get install [package]` : Install a package
+- `sudo apt get update` : Update the list of packages
+- `sudo apt get upgrade` : Upgrade installed packages (run after update)
 - `sudo apt remove [package]` / `sudo apt purge [package]` : Remove packages (purge removes config files too)
 - `sudo reboot` : Restart the system immediately
 - `sudo shutdown -h now` : Shutdown the system immediately

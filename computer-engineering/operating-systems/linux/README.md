@@ -12,3 +12,12 @@
 - [The Unix Shell](https://swcarpentry.github.io/shell-novice/)
 - [Raspberry Pi](/computer-engineering/hardware-electronics/raspberry-pi)
 - [Ubuntu creating desktop link](./ubuntu-create-desktop-link.md)
+
+## Frequently used commands
+
+- Restart the desktop portal to free memory bug in Ubuntu:  
+  `systemctl restart --user xdg-desktop-portal-gnome.service`
+- Force update Google Chrome (after downloading deb file):  
+  `sudo apt update && sudo apt upgrade && sudo apt install ./google-chrome-stable_current_amd64.deb`
+- `kill [pid]` / `kill -9 [pid]` : Terminate a process (`-9` forces termination)
+- `killall [name]` : Terminate all processes matching a name
