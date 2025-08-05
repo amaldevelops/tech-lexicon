@@ -1,8 +1,7 @@
 # Administration
 
 - `su` : Switch user (defaults to root unless specified)
-- `whoami` : Display current user name
-- `id` : Display current user and group information
+
 - `passwd` : Create or update a user's password
 - `sudo` : Command to escalate privileges in Linux
 - `sudo [command]` : Execute `[command]` with elevated privileges
@@ -20,10 +19,7 @@
 - `sudo apt update && sudo apt upgrade` : Refresh and update software in Debian/Ubuntu in one command
 - `sudo apt install ./deb_file` : Manually install Deb files from current directory
 - `snap refresh` : Update Snap packages
-- `df` / `df -h` : Display disk filesystem info (human-readable)
-- `du -h` : Display disk usage of directories (human-readable)
 - `service` : Start and stop services
-- `ps` / `ps aux` / `ps -u [user]` : Display running processes (all or by user)
 - `kill [pid]` / `kill -9 [pid]` : Terminate a process (`-9` forces termination)
 - `killall [name]` : Terminate all processes matching a name
 - `mount` : Mount file systems
@@ -36,19 +32,11 @@
 - `useradd` / `usermod` : Add or modify users
 - `crontab -l` / `crontab -e` : List or edit scheduled cron jobs
 - `screen -s [name]` / `screen -r [name or ID]` : Start or resume detached terminal sessions
-- `lsof` : List open files and associated processes
 - `watch` : Run a command periodically to monitor output
-- `dpkg -l` / `dpkg -l | grep [package]` : List installed packages or search for one
-- `htop` : Interactive process viewer (alternative to top)
 - `/usr/bin/dm-tool lock` : Lock the screen
-- `uname` : Display system info (kernel, hardware, OS)
-- `jobs` : List background jobs
 - `bg` : Resume a stopped job in the background
 - `fg` : Bring a job to the foreground
-- `top` : Real-time process monitor sorted by CPU usage
-- `uptime` : Show time since last system boot
 - `whereis [command]` : Locate executable file of a command
-- `free` : Display used and available RAM
 - Restart the desktop portal to free memory bug in Ubuntu:  
   `systemctl restart --user xdg-desktop-portal-gnome.service`
 - Force update Google Chrome (after downloading deb file):  

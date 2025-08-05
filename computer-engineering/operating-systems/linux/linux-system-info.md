@@ -7,19 +7,29 @@
 - `echo` : Print any text that follows the command
 - `less` : Linux command to display paged outputs in the terminal
 - `man` : Access manual pages for all Linux commands
-- `uname` : Linux command to get basic information about the OS
+- `uname` : Display system info (kernel, hardware, OS)
+- `jobs` : List background jobs
 - `whoami` : Get the active username
+- `id` : Display current user and group information
 - `grep` : Search for a string within an output
 - `cal` : View a command-line calendar
 - `whereis` : Locate the binary, source, and manual pages for a command
 - `whatis` : Find what a command is used for
-- `top` : View active processes live with their system usage
+- `dpkg -l` / `dpkg -l | grep [package]` : List installed packages or search for one
+- `lsof` : List open files and associated processes
+- `htop` : Interactive process viewer (alternative to top)
+- `top` : Real-time process monitor sorted by CPU usage
+- `uptime` : Show time since last system boot
+- `free` : Display used and available RAM
+- `df` / `df -h` : Display disk filesystem info (human-readable)
+- `du -h` : Display disk usage of directories (human-readable)
 - `cat /home/pi/README.txt` Or `cat [file]` : Displays all the content of the specified file.
 - `more /var/log/syslog Or more [file]` : Displays the content of the specified file, page per page (enter or space to continue, q to quit).
 - `tail /var/log/syslog` OR `tail [file]` : Tail allows you to display the end of a file, it’s useful to check new entries in a log file.
 - `tail -n20 /var/log/syslog` : You can specify the number of lines to display with -n.
 - `tail -f /var/log/syslog` : Option -f to displays new lines in real-time.
 - `head /home/pi/file.txt` Or `head -n20 /home/pi/file.txt` Or `head [file]` : It’s the same as tail but to display the beginning of a file.
+- `ps` / `ps aux` / `ps -u [user]` : Display running processes (all or by user)
 - `grep dhcp /var/log/syslog or grep [string]` : Grep is a powerful tool to search string in a text. You can use it to search something in a file or to filter the output of another command or script. `cat /var/log/syslog | grep dhcp /home/pi/myscript.sh | grep error ls -latr | grep php` Lot of options to use with grep, like regular expressions or options to display lines before (-B), after (-A) or around (-C) the search string. You can also use -v to display everything except the input string. `grep 'dhcp|dns' /var/log/syslog grep -A2 -B4 'Fatal error' /var/log/apache/error.log grep -v 'Notice' /var/log/apache/error.log`
 - `sudo lshw` : View hardware info
 - `sudo gnome-text-editor /etc/systemd/logind.conf` : Change the Laptop Lid close behavior : find out the line #HandleLidSwitch=suspend and change it to one of following : HandleLidSwitch=lock – lock when lid closed. HandleLidSwitch=ignore – do nothing, some laptops will disconnect Wi-Fi. HandleLidSwitch=poweroff – shutdown. HandleLidSwitch=hibernate – hibernate Ubuntu. restart your computer
