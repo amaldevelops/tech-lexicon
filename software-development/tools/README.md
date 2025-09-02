@@ -10,3 +10,4 @@
 - [Chrome Developer Tools](./chrome-developer-tools.md)
 - [NPM](./npm.md)
 - [Postman](./postman.md)
+- [New Ubuntu machine config](./new-ubuntu-machine-config.md)
