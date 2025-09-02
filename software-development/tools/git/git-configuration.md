@@ -2,16 +2,89 @@
 
 ## Setting up Git & GitHub on a new Ubuntu/Linux installation
 
-- `git config --global user.name "Amal K"` : Use this command for adding a user name and confirm that you have set the Git username correctly:
-- `git config user.name`
-- `git config --global user.email "email@example.com"`: To set an email address in Git. - You can use your GitHub-provided noreply email address or any email address.
-- To confirm that you have set the email address correctly in Git:
-- `git config --global user.email ssh-keygen -t ed25519 -C "your_email@example.com"` : Generating a new SSH key, for further information Visit here
-- `eval "$(ssh-agent -s)" ssh-add ~/.ssh/id_ed25519` : Adding your SSH key to the ssh-agent
-- `cat ~/.ssh/id_ed25519.pub` : Adding a new SSH key to your GitHub account Visit here
-  Then select and copy the contents of the id_ed25519.pub file displayed in the terminal to your clipboard In the upper-right corner of any GitHub page, click your profile photo, then click Settings.
-- Settings icon in the user bar, In the "Access" section of the sidebar, click SSH and GPG keys. Click New SSH key or Add SSH key. These steps should set your new Linux machine with Github
-- `git remote set-url origin [updated link url https://........git]` : Update renamed repository address
+### 1. Install Git
+
+```bash
+sudo apt update
+sudo apt install git
+```
+
+After installing, verify Git was installed successfully:
+
+```bash
+git --version
+```
+
+
+***
+
+### 2. Configure Git Username \& Email
+
+Set your name (used for commits):
+
+```bash
+git config --global user.name "Amal K"
+git config --global user.name     # Confirm username
+```
+
+Set your email address:
+
+```bash
+git config --global user.email "email@example.com"
+git config --global user.email    # Confirm email
+```
+
+You may use your GitHub-provided noreply email, or any valid email address.
+
+***
+
+### 3. Generate a New SSH Key
+
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+For additional details on SSH keys, see the [GitHub Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+
+***
+
+### 4. Add Your SSH Key to the SSH Agent
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+
+
+***
+
+### 5. Add SSH Key to Your GitHub Account
+
+Display your public key:
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+**Copy the contents of the terminal output.**
+
+- On GitHub: Click your profile photo → Settings.
+- In the "Access" section, click **SSH and GPG keys**.
+- Click **New SSH Key** and paste your key.
+
+***
+
+### 6. Connect Your Local Git Repo to GitHub
+
+```bash
+git remote set-url origin [your-repo-url]
+```
+
+Replace `[your-repo-url]` with the HTTPS or SSH link for your GitHub repository.
+
+### Set VSCode as Git Commit Editor
+
+`git config --global core.editor "code --wait`
 
 ## How to connect local folder to new/existing GitHub repository:
 
