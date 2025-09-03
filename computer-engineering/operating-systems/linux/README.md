@@ -8,6 +8,7 @@
 - [How Linux work](./how-linux-work.md)
 - [KVM+Virt-Manager setup](./kvm-virt-manager-setup.md)
 - [Raspberry Pi Commands](/computer-engineering/hardware-electronics/raspberry-pi/README.md)
+- [Ubuntu New Install Configuration](./ubuntun-new-install.md)
 
 ## External Links
 

@@ -15,8 +15,7 @@ After installing, verify Git was installed successfully:
 git --version
 ```
 
-
-***
+---
 
 ### 2. Configure Git Username \& Email
 
@@ -36,7 +35,7 @@ git config --global user.email    # Confirm email
 
 You may use your GitHub-provided noreply email, or any valid email address.
 
-***
+---
 
 ### 3. Generate a New SSH Key
 
@@ -46,7 +45,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 For additional details on SSH keys, see the [GitHub Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 
-***
+---
 
 ### 4. Add Your SSH Key to the SSH Agent
 
@@ -55,8 +54,7 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 ```
 
-
-***
+---
 
 ### 5. Add SSH Key to Your GitHub Account
 
@@ -72,7 +70,7 @@ cat ~/.ssh/id_ed25519.pub
 - In the "Access" section, click **SSH and GPG keys**.
 - Click **New SSH Key** and paste your key.
 
-***
+---
 
 ### 6. Connect Your Local Git Repo to GitHub
 
