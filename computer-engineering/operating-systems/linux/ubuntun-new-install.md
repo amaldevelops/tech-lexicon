@@ -1,4 +1,4 @@
-# Ubuntu New Install
+# Ubuntu New Install Configuration
 
 ## Setup Development tools
 
