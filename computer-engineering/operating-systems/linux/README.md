@@ -2,9 +2,8 @@
 
 ## Index
 
-- [Ubuntu Daily Commands](./ubuntu-daily-commands.md)
+- [Terminal Commands - Full](./terminal-commands-full.md)
 - [File system types](./file-system-types.md)
-- [Linux : Admin](linux-admin.md)
 - [How Linux work](./how-linux-work.md)
 - [KVM+Virt-Manager setup](./kvm-virt-manager-setup.md)
 - [Raspberry Pi Commands](/computer-engineering/hardware-electronics/raspberry-pi/README.md)
