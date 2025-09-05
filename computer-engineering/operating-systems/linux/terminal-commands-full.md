@@ -119,6 +119,7 @@
 - `ps` / `ps aux` / `ps -u [user]` : Display running processes (all or by user)
 - `grep dhcp /var/log/syslog or grep [string]` : Grep is a powerful tool to search string in a text. You can use it to search something in a file or to filter the output of another command or script. `cat /var/log/syslog | grep dhcp /home/pi/myscript.sh | grep error ls -latr | grep php` Lot of options to use with grep, like regular expressions or options to display lines before (-B), after (-A) or around (-C) the search string. You can also use -v to display everything except the input string. `grep 'dhcp|dns' /var/log/syslog grep -A2 -B4 'Fatal error' /var/log/apache/error.log grep -v 'Notice' /var/log/apache/error.log`
 - `sudo lshw` : View hardware info
+- `lsusb -v` : Check USB Devices & Controllers
 - `sudo gnome-text-editor /etc/systemd/logind.conf` : Change the Laptop Lid close behavior : find out the line #HandleLidSwitch=suspend and change it to one of following : HandleLidSwitch=lock – lock when lid closed. HandleLidSwitch=ignore – do nothing, some laptops will disconnect Wi-Fi. HandleLidSwitch=poweroff – shutdown. HandleLidSwitch=hibernate – hibernate Ubuntu. restart your computer
 - `upower -i /org/freedesktop/UPower/devices/battery_BAT0` : Check the Laptop battery status
 - `sudo dmidecode -t system | grep Serial` : Lenovo Thinkpad Find serial number

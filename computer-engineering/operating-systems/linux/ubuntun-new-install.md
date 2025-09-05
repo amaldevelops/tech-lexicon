@@ -28,11 +28,16 @@ Launch it via terminal: `psensor`
 
 Live terminal dashboard like htop, but for GPUs, Run : `nvtop`
 
-### Show Temps on GNOME Top Bar (if using GNOME)
+## Gnome Extensions
 
 - Install GNOME Shell Extensions: `sudo apt install gnome-shell-extensions`
-- Go to : https://extensions.gnome.org
+- Go to : https://extensions.gnome.org to find the extensions required
+- To make sure Extension Is Installed: `gnome-extensions list`
+- Enable the Extension using command line `gnome-extensions enable`
+- Restart GNOME Shell (on X11 only): Press Alt + F2, type r, press Enter
+
+### Show Temps on GNOME Top Bar using Gnome Extensions
+
 - Search for `System Monitor` and click install button
 - Make Sure Extension Is Installed: `gnome-extensions list`
 - Enable the Extension using command line `gnome-extensions enable system-monitor@paradoxxx.zero.gmail.com` or you can run the GNOME Extensions App (GUI): `gnome-extensions-app`
-- Restart GNOME Shell (on X11 only): Press Alt + F2, type r, press Enter
