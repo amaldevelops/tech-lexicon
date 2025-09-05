@@ -48,15 +48,3 @@ For object-oriented design, the **SOLID** principles are a cornerstone:
 | Separation of Concerns | Clear organization, easier development |
 | KISS Principle         | Simpler, more maintainable code        |
 | Requirement Analysis   | Software meets user needs              |
-
-Understanding and applying these **software engineering theories** is essential for creating robust, scalable, and maintainable software systems[^1] [^2] [^3] [^4] [^5].
-
-[^1]: https://www.thoughtandfunction.com/blog-posts/software-engineering-5-core-principles
-[^2]: https://www.turing.com/blog/principles-of-software-development-guide
-[^3]: https://softjourn.com/insights/core-principles-of-software-development
-[^4]: https://www.sciencedirect.com/science/article/pii/0164121283900031
-[^5]: https://www.geeksforgeeks.org/software-engineering/basic-principles-of-good-software-engineering-approach/
-[^6]: https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering
-[^7]: https://www.csd.uoc.gr/~hy109/resources/basic_principles.pdf
-[^8]: https://www.reddit.com/r/softwarearchitecture/comments/18egt01/principles_of_software_engineering/
-[^9]: https://static.aminer.org/pdf/PDF/000/305/252/principles_standards_and_tools_for_model_engineering.pdf
