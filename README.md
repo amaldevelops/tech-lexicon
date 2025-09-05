@@ -66,7 +66,7 @@
 
 ### Software Engineering Theory & Tech Interview Prep
 
-- [Software Engineering Theory Tech Interview Prep](./software-development/theory/README.md)
+- [Software Engineering Theory Tech Interview Prep](./software-development/theory)
   - [Algorithms](./software-development/theory/algorithms/README.md)
   - [Data Structures](./software-development/theory/data-structures/README.md)
 
