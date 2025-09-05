@@ -1,10 +1,10 @@
-# Software Engineering Theory
+# Software Engineering Theory & Tech Interview Prep
 
 ## Index
 
 - [Software Engineering Basics](./software-engineering-basics.md)
-- [Algorithms](./algorithms/)
-- [Data Structures](./data-structures/)
+- [Algorithms](./algorithms/README.md)
+- [Data Structures](./data-structures/README.md)
 - [Clean Code](clean-code.md)
 - [GWT - Given-When-Then](gwt.md)
 - [Domain Driven Design](./domain-driven-design.md)
