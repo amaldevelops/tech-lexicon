@@ -1,47 +1,82 @@
 # Tech Lexicon
 
-## Index
+## Computer Engineering
 
-- [Computer Engineering](./computer-engineering/README.md)
-  - [AI & ML](./computer-engineering/ai-ml/)
-  - [Hardware & Electronics](./computer-engineering/hardware-electronics/)
-    - [Raspberry Pi](./computer-engineering/hardware-electronics/raspberrypi/)
-    - [Arduino](./computer-engineering/hardware-electronics/arduino/)
-    - [Computer Hardware](./computer-engineering/hardware-electronics/computer-hardware/)
-    - [Electronics](./computer-engineering/hardware-electronics/computer-hardware/)
-  - [Networking & Cybersecurity/](./computer-engineering/networking-cybersecurity/)
-    - [Cybersecurity/](./computer-engineering/networking-cybersecurity/cybersecurity/)
-    - [Networking](./computer-engineering/networking-cybersecurity/networking/)
-  - [Operating Systems](./computer-engineering/operating-systems/)
-    - [Linux](./computer-engineering/operating-systems/linux/)
-    - [Microsoft Windows](./computer-engineering/operating-systems/microsoft-windows/)
+- [Computer Engineering Index](./computer-engineering/README.md)
+
+### AI & ML
+
+- [AI & ML](./computer-engineering/ai-ml/README.md)
+
+### Hardware & Electronics
+
+- [Hardware & Electronics](./computer-engineering/hardware-electronics/README.md)
+  - [Raspberry Pi](./computer-engineering/hardware-electronics/raspberrypi/)
+  - [Arduino](./computer-engineering/hardware-electronics/arduino/README.md)
+  - [Computer Hardware](./computer-engineering/hardware-electronics/computer-hardware/README.md)
+  - [Electronics](./computer-engineering/hardware-electronics/computer-hardware/README.md)
+
+### Networking & Cybersecurity
+
+- [Networking & Cybersecurity](./computer-engineering/networking-cybersecurity/README.md)
+  - [Cybersecurity/](./computer-engineering/networking-cybersecurity/cybersecurity/README.md)
+  - [Networking](./computer-engineering/networking-cybersecurity/networking/README.md)
+
+### Operating Systems
+
+- [Operating Systems](./computer-engineering/operating-systems/README.md)
+  - [Linux](./computer-engineering/operating-systems/linux/README.md)
+  - [Microsoft Windows](./computer-engineering/operating-systems/microsoft-windows/README.md)
+
+## Software Development
+
 - [Software Development](./software-development/README.md)
-  - [Back End](./software-development/backend/)
-    - [Database](./software-development/backend/database/)
-    - [Node.Js](./software-development/backend/nodejs/)
-    - [Python](./software-development/backend/python/)
-  - [Front End](./software-development/frontend/)
-    - [JavaScript](./software-development/frontend/javascript/)
-      - [React](./software-development/frontend/javascript/react/)
-    - [CSS](./software-development/frontend/css/)
-    - [HTML](./software-development/frontend/html/)
-    - [Front End assets](./software-development/frontend/assets/)
-  - [DevOps and Cloud](./software-development/devops-cloud/)
-    - [Render.com](./software-development/devops-cloud/cloud-providers/render-com.md)
-    - [Neon.tech](./software-development/devops-cloud/cloud-providers/neon-tech.md)
-    - [Cloudflare](./software-development/devops-cloud/cloud-providers/cloudflare.md)
-    - [Netlify](./software-development/devops-cloud/cloud-providers/netlify.md)
-    - [Vercel](./software-development/devops-cloud/cloud-providers/vercel.md)
-    - [Github Pages](./software-development/devops-cloud/cloud-providers/github-pages.md)
-  - [Software Testing](./software-development/testing/)
-    - [Jest](./software-development/testing/jest/)
-  - [Software Engineering Theory](./software-development/theory/)
-    - [Algorithms](./software-development/theory/algorithms/)
-    - [Data Structures](./software-development/theory/data-structures/)
-  - [Tools](./software-development/tools/)
-    - [VS Code](./software-development/tools/vscode/)
-    - [Postman](./software-development/tools/postman.md)
-    - [Git](./software-development/tools/git/)
+
+### Front End
+
+- [Front End](./software-development/frontend/)
+  - [JavaScript](./software-development/frontend/javascript/)
+    - [React](./software-development/frontend/javascript/react/)
+  - [CSS](./software-development/frontend/css/)
+  - [HTML](./software-development/frontend/html/)
+  - [Front End assets](./software-development/frontend/assets/)
+
+### Back End
+
+- [Back End](./software-development/backend/)
+
+  - [Database](./software-development/backend/database/)
+  - [Node.Js](./software-development/backend/nodejs/)
+  - [Python](./software-development/backend/python/)
+
+### DevOps and Cloud
+
+- [DevOps and Cloud](./software-development/devops-cloud/)
+  - [Render.com](./software-development/devops-cloud/cloud-providers/render-com.md)
+  - [Neon.tech](./software-development/devops-cloud/cloud-providers/neon-tech.md)
+  - [Cloudflare](./software-development/devops-cloud/cloud-providers/cloudflare.md)
+  - [Netlify](./software-development/devops-cloud/cloud-providers/netlify.md)
+  - [Vercel](./software-development/devops-cloud/cloud-providers/vercel.md)
+  - [Github Pages](./software-development/devops-cloud/cloud-providers/github-pages.md)
+
+### Software Testing
+
+- [Software Testing](./software-development/testing/)
+  - [Jest](./software-development/testing/jest/)
+
+### Software Engineering Theory
+
+- [Software Engineering Theory](./software-development/theory/README.md)
+  - [Algorithms](./software-development/theory/algorithms/README.md)
+  - [Data Structures](./software-development/theory/data-structures/README.md)
+  - [Tech Interview Prep]()
+
+### Software Tools
+
+- [Software Tools](./software-development/tools/)
+  - [VS Code](./software-development/tools/vscode/)
+  - [Postman](./software-development/tools/postman.md)
+  - [Git](./software-development/tools/git/)
 
 ## Intro
 
