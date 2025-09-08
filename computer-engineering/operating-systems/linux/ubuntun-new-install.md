@@ -41,3 +41,8 @@ Live terminal dashboard like htop, but for GPUs, Run : `nvtop`
 - Search for `System Monitor` and click install button
 - Make Sure Extension Is Installed: `gnome-extensions list`
 - Enable the Extension using command line `gnome-extensions enable system-monitor@paradoxxx.zero.gmail.com` or you can run the GNOME Extensions App (GUI): `gnome-extensions-app`
+
+## Show Keyboard Caos Lock and Num Lock
+
+- Search for `Lock Keys` or
+- `https://extensions.gnome.org/extension/36/lock-keys/`
