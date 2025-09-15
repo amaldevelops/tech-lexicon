@@ -19,6 +19,7 @@
 - `exit` : Exit or close the terminal
 - `history` : Display recently used commands (also navigable with Up/Down arrow keys)
 - `!` : Repeat a recently used command (`!n` for the _n_-th command in history, `!-n` for _n_ commands ago)
+- `echo $XDG_SESSION_TYPE` - Check the Ubuntu, session mode (X11 or Wayland)
 
 ## Ubuntu Shortcuts
 
