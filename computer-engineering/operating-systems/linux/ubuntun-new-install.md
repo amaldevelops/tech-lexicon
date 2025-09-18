@@ -1,5 +1,9 @@
 # Ubuntu New Install Configuration
 
+## Ubuntu Security
+
+- Enable and configure the Uncomplicated Firewall (UFW) with rules to restrict unnecessary network access : `sudo ufw enable`
+
 ## Setup Development tools
 
 - [Setup GIT](/software-development/tools/git/git-configuration.md)
