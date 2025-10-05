@@ -2,11 +2,13 @@
 
 ## Ubuntu Security
 
-- Enable and configure the Uncomplicated Firewall (UFW) with rules to restrict unnecessary network access : `sudo ufw enable`
+- Enable and configure the Uncomplicated Firewall (UFW) with rules to restrict unnecessary network access : `sudo ufw enable` then check status: `sudo ufw status`
+- Install ClamAV: `Install: sudo apt install clamav clamav-daemon` | Update database: `sudo freshclam` | Run a scan: `sudo clamscan -r /home/youruser`
 
 ## Setup Development tools
 
 - [Setup GIT](/software-development/tools/git/git-configuration.md)
+- Install VS Code
 
 ## Best Tools to Monitor Temps on Your Legion 5 (Ubuntu)
 
