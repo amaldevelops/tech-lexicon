@@ -2,6 +2,7 @@
 
 ## Frequently used commands
 
+- `sudo apt install ./deb_file` : Manually install Deb files from current directory
 - `sudo udisksctl power-off -b /dev/sda` : Turn off external SSD/HDD power
 - Restart the desktop portal to free memory bug in Ubuntu:  
   `systemctl restart --user xdg-desktop-portal-gnome.service`
