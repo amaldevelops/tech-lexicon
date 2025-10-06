@@ -37,4 +37,20 @@ For Pico-series devices, BOOTSEL mode lives in read-only memory inside the RP204
 
 ## Getting Started with Pico
 
-Refer getting-started-with-pico.pdf
+Python is the fastest way to get started with embedded software on Pico-series devices.
+Because MicroPython is highly efficient, and RP-series microcontrollers are designed with a disproportionate amount of system memory and processing power for their price, MicroPython is a serious tool for embedded systems development, which does not
+compromise on approachability. For exceptionally demanding pieces of software, you can fall back on the SDK
+
+- [Raspberry Pi Pico-series Python SDK](./raspberry-pi-pico-python-sdk.pdf)
+- [Download Micro Python Firmware](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html)
+- Install the Micro Python firmware into Pico using BOOTSEL
+- When MicroPython boots for the first time, it will sit and wait for you to connect and tell it what to do. You can load a .py file from your computer onto the board, but a more immediate way to interact with it is through what is called the read- evaluate-print loop, or REPL (often pronounced similarly to "ripple").
+  - Read : MicroPython waits for you to type in some text, followed by the enter key.
+  - Evaluate : Whatever you typed is interpreted as Python code, and runs immediately.
+  - Print : Any results of the last line you typed are printed out for you to read.
+  - Loop : Go back to the start — prompt you for another line of code.
+- There are two ways to connect to this REPL, so you can communicate with the MicroPython firmware on your board: over USB, and over the UART serial port on Pico-series GPIOs.
+- The MicroPython firmware is equipped with a virtual USB serial port which is accessed through the micro USB connector on Pico-series devices. Your computer should notice this serial port and list it as a character device, most likely `/dev/ttyACM0`
+- Install minicom `sudo apt install minicom` minicom is a text-based serial communication program for Unix/Linux systems. It's like a terminal emulator that lets you communicate with devices over a serial port — like microcontrollers (e.g. Raspberry Pi Pico, Arduino)
+- You can either add your linux user name to dial out group `sudo usermod -aG dialout $USER`
+- To connect to Pico `sudo minicom -b 115200 -D /dev/ttyACM0`
