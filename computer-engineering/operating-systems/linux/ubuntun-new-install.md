@@ -4,6 +4,7 @@
 
 - Enable and configure the Uncomplicated Firewall (UFW) with rules to restrict unnecessary network access : `sudo ufw enable` then check status: `sudo ufw status`
 - Install ClamAV: `Install: sudo apt install clamav clamav-daemon` | Update database: `sudo freshclam` | Run a scan: `sudo clamscan -r /home/youruser`
+- Lynis: A security auditing tool that checks your system for security holes and potential misconfigurations. Install: `sudo apt install lynis` | Run an audit: `sudo lynis audit system`
 
 ## Setup Development tools
 
