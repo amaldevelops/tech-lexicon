@@ -53,4 +53,5 @@ compromise on approachability. For exceptionally demanding pieces of software, y
 - The MicroPython firmware is equipped with a virtual USB serial port which is accessed through the micro USB connector on Pico-series devices. Your computer should notice this serial port and list it as a character device, most likely `/dev/ttyACM0`
 - Install minicom `sudo apt install minicom` minicom is a text-based serial communication program for Unix/Linux systems. It's like a terminal emulator that lets you communicate with devices over a serial port — like microcontrollers (e.g. Raspberry Pi Pico, Arduino)
 - You can either add your linux user name to dial out group `sudo usermod -aG dialout $USER`
-- To connect to Pico `sudo minicom -b 115200 -D /dev/ttyACM0`
+- To connect to Pico `sudo minicom -b 115200 -D /dev/ttyACM0` To exit Minicom press `CTRL+A` then `Q`
+- If you press `CTRL-D` on your keyboard tells MicroPython to reboot. You can do this at any time. When it reboots, MicroPython will print out a message saying exactly what firmware version it is running, and when it was built.
