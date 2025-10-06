@@ -34,3 +34,7 @@ Raspberry Pi Pico is a low-cost, high-performance microcontroller board with fle
 ## Resetting Flash memory
 
 For Pico-series devices, BOOTSEL mode lives in read-only memory inside the RP2040 or RP2350 chip, and can’t be overwritten accidentally. No matter what, if you hold down the BOOTSEL button when you plug in your Pico, it will appear as a drive onto which you can drag a new UF2 file. There is no way to brick the board through software. However, there are some circumstances where you might want to make sure your flash memory is empty. You can do this by dragging and dropping a special UF2 binary (flash_nuke.uf2) onto your Pico when it is in mass storage mode.
+
+## Getting Started with Pico
+
+Refer getting-started-with-pico.pdf
