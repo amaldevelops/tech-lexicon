@@ -55,3 +55,5 @@ compromise on approachability. For exceptionally demanding pieces of software, y
 - You can either add your linux user name to dial out group `sudo usermod -aG dialout $USER`
 - To connect to Pico `sudo minicom -b 115200 -D /dev/ttyACM0` To exit Minicom press `CTRL+A` then `Q`
 - If you press `CTRL-D` on your keyboard tells MicroPython to reboot. You can do this at any time. When it reboots, MicroPython will print out a message saying exactly what firmware version it is running, and when it was built.
+- Above is only for sending individual commands, it is recommended to use VS code for coding the Pico
+- Make sure to install the VS Code extension`https://marketplace.visualstudio.com/items?itemName=paulober.pico-w-go`
