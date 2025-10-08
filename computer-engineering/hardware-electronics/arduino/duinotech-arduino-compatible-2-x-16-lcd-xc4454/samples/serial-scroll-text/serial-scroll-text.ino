@@ -10,7 +10,7 @@ int totalLines = 0;
 int scrollIndex = 0;
 
 unsigned long lastScrollTime = 0;
-const unsigned long scrollInterval = 1000; // Scroll every 1 second
+const unsigned long scrollInterval = 2000; // Scroll every 1 second
 
 bool messageReady = false;
 bool scrolling = false;
@@ -19,6 +19,10 @@ void setup() {
   lcd.begin(16, 2);
   Serial.begin(9600);
   lcd.clear();
+  lcd.print("Serial Monitor!");
+  lcd.setCursor(0, 1);
+  lcd.print("Waiting....");
+  
 }
 
 void loop() {
