@@ -64,3 +64,37 @@ For full control, use the tool L5P-Keyboard-RGB (GitHub: 4JX/L5P-Keyboard-RGB), 
 - So the way is to download the latest version from releases (I have saved the latest in case this repo is gone)
 - Make the downloaded file executable and run it with sudo permissions `sudo ./legion-kb-rgb` then the program should work.
 - Only install this if you get an error message `cannot open shared object file: No such file or directory` then install `sudo apt install xdotool` Alternatively, if only the shared library is needed: `sudo apt install libxdo3`
+
+### Lenovo Legion set Battery conservation mode
+
+Lenovo Legion laptops support a battery conservation mode (charge limit) through the ACPI interface exposed by the ideapad_acpi kernel driver. This mode helps prolong battery lifespan by preventing it from staying at 100% charge when plugged in.
+
+- Ensure the driver and control file exist: : `ls /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
+- If the file exists, your Legion supports firmware-level battery limiting - If not, check that the module is loaded
+  `lsmod | grep ideapad`
+  `sudo modprobe ideapad_laptop`
+- View current conservation mode status : `cat /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
+
+```bash
+1	Conservation Mode ON	Battery charging limited (~55–60%)
+0	Conservation Mode OFF	Battery charges fully (100%)
+```
+
+- Enable conservation mode (limit charge to ~60%) : `echo 1 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
+- Disable Conservatin mode (allow full charge): `echo 0 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
+- Changes apply instantly and persist until you toggle it again. The exact charge thresholds (e.g. 55–60%) are firmware-controlled and cannot be customized from Linux.
+- View battery capacity & status
+
+```bash
+cat /sys/class/power_supply/BAT0/capacity
+cat /sys/class/power_supply/BAT0/status
+```
+
+- Use watch with a small script, if you want to monitor both continuously:
+
+```bash
+watch -n5 'echo -n "Battery: "; cat /sys/class/power_supply/BAT0/capacity; \
+echo -n "  Status: "; cat /sys/class/power_supply/BAT0/status'
+```
+
+- You can also view the full battery information using: `upower -i /org/freedesktop/UPower/devices/battery_BAT0`
