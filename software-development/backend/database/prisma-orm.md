@@ -66,7 +66,7 @@ authorId Int?
 
 [Official Prisma Relational databases JavaScript and PostgreSQL](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-node-postgresql)
 
-- Make sure that you are in the correct folder when installing Prisma i.e. `messaging-app/backend/src/` and the generated prisma client to be inside `backend/src/prisma/generated`. Also make sure that schema.prisma has the correct path set for the client `generator client {  provider = "prisma-client-js"  output   = "./generated/prisma"}`. Most of the import errors can be avoided if you follow this.
+- Make sure that you are in the correct folder when installing Prisma i.e. `messaging-app/backend/src/` and the generated prisma client to be inside `backend/src/prisma/generated` or where package.json is located. Also make sure that schema.prisma has the correct path set for the client `generator client {  provider = "prisma-client-js"  output   = "./generated/prisma"}`. Most of the import errors can be avoided if you follow this.
 - Install Prisma ORM:
 
 ```bash
@@ -77,7 +77,6 @@ npm install @prisma/client
 ## Setting up Prisma
 
 - Install Prisma
-
 - invoke the Prisma CLI by prefixing it with npx: `npx prisma`
 - Set up Prisma ORM project by creating first Prisma Schema file with the following command:`npx prisma init --datasource-provider postgresql --output ../generated/prisma`. This command creates a new directory called prisma that contains a file called schema.prisma, which contains the Prisma Schema with your database connection variable and schema models. Sets the datasource to PostgreSQL and the output to a custom location, respectively. Creates the .env file in the root directory of the project, which is used for defining environment variables (such as your database connection).
 - If using git for version control, recommended to add a line to .gitignore in order to exclude the generated client from the application. In this example, to exclude the generated/prisma directory. : .gitignore => `generated/prisma/`
