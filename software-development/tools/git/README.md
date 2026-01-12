@@ -1,6 +1,6 @@
 # Git
 
 - [Git Basics](git-basics.md)
-- [Git Advanced](git-advanced.md)
+- [Git Best Practices](git-best-practices.md)
 - [Git Hub](git-hub.md)
 - [Git/Github Configurations](git-configuration.md)
