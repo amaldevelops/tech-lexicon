@@ -9,6 +9,7 @@
 - Force update Google Chrome (after downloading deb file):  
   `sudo apt update && sudo apt upgrade && sudo apt install ./google-chrome-stable_current_amd64.deb`
 - `kill [pid]` / `kill -9 [pid]` : Terminate a process (`-9` forces termination)
+- `upower -i /org/freedesktop/UPower/devices/battery_BAT0` : Check the Laptop battery status
 - View current Lenovo Legion Battery conservation mode status : `cat /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 
 ```bash
@@ -19,10 +20,10 @@
 - Enable Lenovo Legion conservation mode (limit charge to ~60%) : `echo 1 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 - Disable Lenovo Legion Conservation mode (allow full charge): `echo 0 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
 - Changes apply instantly and persist until you toggle it again. The exact charge thresholds (e.g. 55–60%) are firmware-controlled and cannot be customized from Linux.
-- `powerprofilesctl get` : Lenovo Legion Laptop Power Mode, you can also click `Fn + Q`.
-  - Quiet : Lower fan speed, cooler and quieter, less performance
-  - Blue :Balanced Default mode — balanced performance and cooling
-  - White:Performance Maximum CPU/GPU performance, louder fans Red
+- `powerprofilesctl get` : Lenovo Legion Laptop Power Mode, you can also click `Fn + Q`, power button LED color change accordingly
+  - Power Saver / Blue Led : Lower fan speed, cooler and quieter, less performance
+  - Balanced Mode / White Led : Balanced Default mode — balanced performance and cooling
+  - Performance Mode / Red Led : Performance Maximum CPU/GPU performance, louder fans
 - `killall [name]` : Terminate all processes matching a name
 - `alias` : Create a shortcut to a command (can also be used with `cd` to shortcut directories)
 - `clear` : Clear the terminal screen
