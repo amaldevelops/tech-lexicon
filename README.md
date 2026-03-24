@@ -1,5 +1,13 @@
 # Tech Lexicon
 
+## Usage VSCode
+
+- You can either search for commands using VSCode (Recommended) or Github Website.
+- `Ctrl + Shift + F` : Open global keyword search to search for keywords
+- `Ctrl + P` : Quick Open (The "Jump to File" Method) : If you know which file the command is in (e.g., your networking.md file), use this to teleport there.
+- `Ctrl + Shift + O` : Search within the current file using Symbol Search (The "Jump to Heading" Method)
+- `Ctrl + T` : Search headings across the entire repo (How it works: Type @ followed by the command name. VS Code treats Markdown headers as symbols, letting you jump directly to the # User Permissions section without scrolling.)
+
 ## Computer Engineering
 
 - [Computer Engineering Index](./computer-engineering/README.md)
@@ -44,7 +52,6 @@
 ### Back End
 
 - [Back End](./software-development/backend/README.md)
-
   - [Database](./software-development/backend/database/README.md)
   - [Node.Js](./software-development/backend/nodejs/README.md)
   - [Python](./software-development/backend/python/README.md)
