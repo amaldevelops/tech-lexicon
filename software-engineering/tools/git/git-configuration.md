@@ -82,7 +82,7 @@ Replace `[your-repo-url]` with the HTTPS or SSH link for your GitHub repository.
 
 ### Set VSCode as Git Commit Editor
 
-`git config --global core.editor "code --wait`
+`git config --global core.editor "code --wait"`
 
 ## How to connect local folder to new/existing GitHub repository:
 
