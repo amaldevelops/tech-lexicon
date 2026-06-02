@@ -19,7 +19,7 @@ To set up QEMU/KVM on Ubuntu, follow these recommended steps to ensure full virt
 - Update your Ubuntu packages:
   - `sudo apt update && sudo apt upgrade -y`
 - Install virtualization tools:
-  - `sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager virtinst`
+  - `sudo apt install -y qemu-system-x86-hwe libvirt-daemon-system-hwe libvirt-clients-hwe bridge-utils virt-manager virtinst`
   - Package roles:
     - `qemu-kvm`: Emulator and KVM support
     - `libvirt-daemon-system` and `libvirt-clients`: VM management
