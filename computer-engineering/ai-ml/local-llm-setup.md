@@ -1,3 +1,42 @@
+# Local LLM Setup
+
+## Hardware
+- With an 4 GB VRAM and 32 GB of RAM, capable of running a good range of local LLMs, but you'll want to stick to smaller or quantized models. The 32 GB of system RAM is a big advantage because it allows CPU offloading when the GPU runs out of VRAM. The biggest limitation is the 4 GB of VRAM. If your goal is coding, software development, or a personal AI assistant, a 7B model running through Ollama or LM Studio is likely to give you the best balance of quality and speed on your hardware.
+
+### Runs very well
+
+- 3B–4B models
+- 7B–8B models in 4-bit quantization (with some CPU offloading)
+- Embedding models for semantic search
+- Small coding models
+
+### Usable, but slower
+
+- 12B–14B models (4-bit, significant CPU offloading)
+- Vision-language models with modest image sizes
+
+### Generally not practical
+
+- 32B+ models for interactive use
+- 70B models (they'll run only under very constrained setups and will be too slow for most workflows)
+
+### Performance expectations
+
+| Model size | Expected performance |
+|----|----|
+| 3B	| 25–60 tokens/sec |
+| 7B | 10–25 tokens/sec |
+| 14B | 3–8 tokens/sec |
+
+- Actual speed depends on the software, quantization, prompt length, and how much of the model fits in VRAM.
+
+### Good models for above hardware
+
+- For general chat: Llama 3.2 3B | Qwen2.5 7B | Gemma 3 4B
+- For coding: Qwen2.5-Coder 7B | DeepSeek-Coder 6.7B
+- For reasoning: Smaller reasoning-oriented variants around 7B–8B are a better fit than larger flagship reasoning models.
+
+## Setup
 > Host (Ubuntu) runs the LLM locally
 > Fedora VM talks to it over a safe network bridge
 
