@@ -1,5 +1,9 @@
 # Ubuntu Server
 
+## Connect to Ubuntu server from Bash terminal
+- `ssh username@remote_server_ip`
+- i.e. `ssh engineer@192.168.122.59`
+
 ## Install GUI
 
 - Update Your System : `sudo apt update && sudo apt upgrade -y`
