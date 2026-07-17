@@ -20,6 +20,9 @@
 ## Switch it back to the GUI
 - And to switch it back to the GUI: `sudo systemctl set-default graphical.target`
 
+## Manualy start the GUI from CLI
+- `sudo systemctl start lightdm`
+
 ## Uninstall GUI
 - If you installed the Xubuntu desktop and realized you want to revert your Ubuntu Server back to a clean, lightweight, CLI-only state, you can completely uninstall it.
 - Because desktop environments install hundreds of individual packages (dependencies), a simple apt remove isn't quite enough. Follow these steps to cleanly purge the GUI and free up your system resources.
