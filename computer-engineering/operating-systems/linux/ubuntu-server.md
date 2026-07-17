@@ -9,8 +9,11 @@
 
  - Choose LightDM if you are running a lightweight desktop (XFCE/Xubuntu, LXQt/Lubuntu), are low on RAM, or want a highly customizable, lightweight login screen.
 - Restart Your Server : `sudo reboot`
-- If you ever want to switch back to booting directly into the command line without uninstalling the GUI, you can change the default target with this command:
-`sudo systemctl set-default multi-user.target`
+
+## Switch back to booting directly into the command line
+- If you ever want to switch back to booting directly into the command line without uninstalling the GUI, you can change the default target with this command: `sudo systemctl set-default multi-user.target`
+
+## Switch it back to the GUI
 - And to switch it back to the GUI: `sudo systemctl set-default graphical.target`
 
 ## Uninstall GUI
