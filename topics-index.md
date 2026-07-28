@@ -1,8 +1,7 @@
 # Tech Lexicon Topics Index
 
-## Computer Engineering
+## [Computer Engineering Index](./computer-engineering/README.md)
 
-- [Computer Engineering Index](./computer-engineering/README.md)
 - [AI & ML](./computer-engineering/ai-ml/README.md)
 - [Hardware & Electronics](./computer-engineering/hardware-electronics/README.md)
   - [Raspberry Pi](./computer-engineering/hardware-electronics/raspberry-pi/README.md)
@@ -12,17 +11,19 @@
 - [Operating Systems](./computer-engineering/operating-systems/README.md)
   - [Linux](./computer-engineering/operating-systems/linux/README.md)
   - [Microsoft Windows](./computer-engineering/operating-systems/microsoft-windows/README.md)
+  - [Virtual Machines](./computer-engineering/operating-systems/virtual-machines/README.md)
 - [Networking & Cybersecurity](./computer-engineering/networking-cybersecurity/README.md)
   - [Cybersecurity/](./computer-engineering/networking-cybersecurity/cybersecurity/README.md)
   - [Networking](./computer-engineering/networking-cybersecurity/networking/README.md)
 
-## Software Engineering
-- [Software Engineering Index](./software-engineering/README.md)
+## [Software Engineering Index](./software-engineering/README.md)
+
 - [Front End](./software-engineering/frontend/README.md)
   - [JavaScript](./software-engineering/frontend/javascript/README.md)
     - [React](./software-engineering/frontend/javascript/react/README.md)
   - [CSS](./software-engineering/frontend/css/README.md)
   - [HTML](./software-engineering/frontend/html/README.md)
+  - [Markdown](./software-engineering/frontend/markdown/README.md)
   - [Front End assets](./software-engineering/frontend/assets/)
 - [Back End](./software-engineering/backend/README.md)
   - [Database](./software-engineering/backend/database/README.md)
@@ -37,13 +38,14 @@
   - [Git](./software-engineering/tools/git/README.md)
 - [Software Testing](./software-engineering/testing/README.md)
   - [Jest](./software-engineering/testing/jest/README.md)
+  - [Vitest](./software-engineering/testing/vitest/README.md)
 - [DevOps and Cloud](./software-engineering/devops-cloud/README.md)
-  - [Render.com](./software-engineering/devops-cloud/cloud-providers/render-com.md)
-  - [Neon.tech](./software-engineering/devops-cloud/cloud-providers/neon-tech.md)
-  - [Cloudflare](./software-engineering/devops-cloud/cloud-providers/cloudflare.md)
-  - [Netlify](./software-engineering/devops-cloud/cloud-providers/netlify.md)
-  - [Vercel](./software-engineering/devops-cloud/cloud-providers/vercel.md)
-  - [Github Pages](./software-engineering/devops-cloud/cloud-providers/github-pages.md)
-
-
-
+  - [CI/CD Pipelines](./software-engineering/devops-cloud/cicd-pipelines/README.md)
+  - [Cloud Providers](./software-engineering/devops-cloud/cloud-providers/README.md)
+  - [Containerization](./software-engineering/devops-cloud/containerization/README.md)
+  - [Infrastructure as code](./software-engineering/devops-cloud/infrastructure-as-code/README.md)
+  - [Monitoring & Logging](./software-engineering/devops-cloud/monitoring-logging/README.md)
+  - [Orchestration](./software-engineering/devops-cloud/orchestration/README.md)
+  - [Scripts](./software-engineering/devops-cloud/scripts/README.md)
+  - [Security & Compliance](./software-engineering/devops-cloud/security-compliance/README.md)
+  - [SEO](./software-engineering/devops-cloud/seo/README.md)
