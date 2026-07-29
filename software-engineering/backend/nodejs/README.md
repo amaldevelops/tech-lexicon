@@ -59,3 +59,6 @@ You can manage versions easily using nvm.
 - When authorizing routes with JWT token will need to be sent as an "Authorization" Headers
 - It is required to use format under HTTP Headers `Authorization : "Bearer <JWT>"`
 - E.g : `Authorization : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDQwOTcyOTYsImV4cCI6MTc0NDA5OTA5Nn0.PboRrhU7xFTzQUltX_ZA59eWs-pxXfH8JHC_tU7jIKA"`
+
+
+[Back to Main Index](/topics-index.md)

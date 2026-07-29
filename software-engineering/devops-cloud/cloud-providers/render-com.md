@@ -19,3 +19,5 @@
 - DATABASE_URL=`postgresql://[User Name]:[Password]@localhost:5432/messages_web_app_db?schema=public` (Enter the URL obtained from PostgreSQL cloud provider, i.e. Neon Databases) 
 JWT_SECRET_KEY=`""` (Enter if you are using JWT authentication) 
 CORS_URL="" `https://www.amalk.au`(Enter the main url of the Front End)
+
+[Back to Main Index](/topics-index.md)

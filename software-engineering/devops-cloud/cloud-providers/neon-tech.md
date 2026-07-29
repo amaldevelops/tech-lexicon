@@ -14,3 +14,5 @@
 - In the your local project in the .env save the connection string in `DATABASE_URL` so when Prisma is running it knows the correct URL of the database. Also save this in your Node app host i.e render so it can connect to the database.
 - In you local project open terminal in the Prisma installation folder and migrate schema to Neon `npx prisma migrate dev --name init`. This will setup the newly created database schema in neon database.
 - If you have a sample data seed you can run it now : `node src/prisma/SeedSampleData.js` Make sure when you run this that you are running from the root file where package.json and .env is located otherwise you will get errors.
+
+[Back to Main Index](/topics-index.md)

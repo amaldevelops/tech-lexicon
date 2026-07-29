@@ -22,4 +22,4 @@
 - [Detailed instructions from The Odin Project](https://www.theodinproject.com/lessons/node-path-react-new-react-router)
 
 
-[Back to Main Index](/topics-index.md)
+[Back to Main Index](../../../../topics-index.md)

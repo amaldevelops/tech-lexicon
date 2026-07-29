@@ -7,3 +7,5 @@
 - [PostgreSQL](postgresql.md)
 - [Prisma ORM](prisma-orm.md)
   - [Prisma ORM basics](./prisma-orm-basics.md)
+
+[Back to Main Index](/topics-index.md)
