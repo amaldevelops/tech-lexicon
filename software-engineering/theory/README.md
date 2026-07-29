@@ -23,3 +23,5 @@ Is a semi-structured way to write down test cases. They can either be tested man
 ## External Links
 
 - [CodePath Computer Science guides on data structures, algorithms and technical interviewing](https://guides.codepath.com/compsci)
+
+[Back to Main Index](/topics-index.md)

@@ -4,5 +4,6 @@
 - [TypeScript](./typescript/README.md)
 - [React](../frontend/react/README.md)
 - [Node.js](../backend/nodejs/README.md)
+- [Software Theory](../theory/README.md)
 
-### [Back to Main Index](/topics-index.md)
+[Back to Main Index](/topics-index.md)
