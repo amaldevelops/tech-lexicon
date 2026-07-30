@@ -64,3 +64,6 @@ The search landscape has fundamentally evolved beyond a simple list of ten blue 
 - **GEO (Generative Engine Optimization):** Optimizing for AI Overviews and engines like Perplexity. To be cited by AI search layers, ensure your content includes direct, unambiguous answers, well-cited statistics, and unique, authoritative viewpoints.
 - **Log File Analysis:** For massive websites (thousands of pages), download server log files to see exactly how often search engine bots crawl your site, pinpointing wasted "crawl budget."
 - **International & Multilingual SEO:** Using `hreflang` tags to serve the correct language or regional version of a site to international users without triggering duplicate content penalties.
+
+
+[Back to Main Index](../../../topics-index.md)

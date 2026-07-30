@@ -61,4 +61,4 @@ You can manage versions easily using nvm.
 - E.g : `Authorization : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDQwOTcyOTYsImV4cCI6MTc0NDA5OTA5Nn0.PboRrhU7xFTzQUltX_ZA59eWs-pxXfH8JHC_tU7jIKA"`
 
 
-[Back to Main Index](/topics-index.md)
+[Back to Main Index](../../../topics-index.md)

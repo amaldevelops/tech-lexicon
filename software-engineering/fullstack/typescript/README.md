@@ -35,3 +35,5 @@ Each of these projects handle the file conversion, but do not handle the type-ch
 ### Babel
 
 Babel is a very popular JavaScript transpiler which supports TypeScript files via the plugin [@babel/plugin-transform-typescript](https://babeljs.io/docs/en/babel-preset-typescript#docsNav)
+
+[Back to Main Index](../../../topics-index.md)

@@ -11,3 +11,5 @@
 - `winget upgrade --all` : This will download and install all the updates available
 - `powercfg /availablesleepstates` : Find the power states available on your computer
 - [Windows 11 Shortcuts](https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
+
+[Back to Main Index](../../../topics-index.md)

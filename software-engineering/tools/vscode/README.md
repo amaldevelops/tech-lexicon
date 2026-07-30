@@ -31,4 +31,4 @@
 - Markdown and [Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
 
 
-[Back to Main Index](/topics-index.md)
+[Back to Main Index](../../../topics-index.md)
