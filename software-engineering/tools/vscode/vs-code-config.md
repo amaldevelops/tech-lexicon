@@ -11,6 +11,8 @@ sudo apt install code
 
 ## Install Extensions
 
+- `ext install oleg-shilo.favorites` : Favorites Manager
+
 ### Prettier: Code Formatter
 
 ### 1. Install Prettier Extension
