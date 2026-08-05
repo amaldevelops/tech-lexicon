@@ -21,6 +21,7 @@ code --version
 
 ---
 
+## Extensions 
 
 ## Setting Up Prettier
 
