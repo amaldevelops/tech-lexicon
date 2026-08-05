@@ -39,6 +39,7 @@ A practical reference for Visual Studio Code — interface basics, setup/config 
 
 ## Basic Actions
 
+- **Start from terminal at current folder ** `code .`
 - **New File:** `Ctrl+N`
 - **Save:** `Ctrl+S` (or enable **Auto Save** under **File > Auto Save**)
 - **Open/close tabs:** each file opens in its own tab; split the editor to view multiple files side by side (`Ctrl+\`)
