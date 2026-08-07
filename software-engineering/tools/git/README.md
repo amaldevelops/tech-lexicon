@@ -1,7 +1,7 @@
 # Git
 
-- [Git Cheat Sheet](./git-cheatsheet.md)
-- [Git Basics](git-basics.md)
+- [Git Workflow](./git-workflow.md)
+- [Git Commands](./git-commands.md)
 - [Git Best Practices](git-best-practices.md)
 - [Git Hub](git-hub.md)
 - [Git/Github Configurations](git-configuration.md)
