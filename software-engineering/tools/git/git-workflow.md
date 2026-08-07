@@ -1,353 +1,681 @@
+# Git & GitHub Workflow
 
-# Git & GitHub Cheat Sheet
+## Overview
 
-## 1) Core Git workflow
+Git manages your local repository history. GitHub hosts the remote repository and provides collaboration features such as pull requests, reviews, and CI/CD.
 
-Git tracks changes in your local repo, and GitHub stores the remote copy.
+Typical workflow:
 
-### Typical workflow
-1. Check what changed.
-2. Stage files.
-3. Commit changes.
-4. Push to GitHub.
+```text
+Create branch
+      ↓
+Make changes
+      ↓
+Commit changes
+      ↓
+Push branch
+      ↓
+Open Pull Request
+      ↓
+Review + CI checks
+      ↓
+Merge into main
+      ↓
+Delete branch
+```
 
-### Essential commands
+---
+
+# 1. Daily Git Workflow
+
+## Check repository status
 
 ```bash
 git status
-git add <file>
+```
+
+Shows:
+- Modified files
+- Staged files
+- Current branch
+- Untracked files
+
+---
+
+## Stage changes
+
+Stage a specific file:
+
+```bash
+git add file.js
+```
+
+Stage all changes:
+
+```bash
 git add -A
-git commit -m "message"
+```
+
+---
+
+## Commit changes
+
+```bash
+git commit -m "Add user authentication"
+```
+
+A commit creates a checkpoint in Git history.
+
+Good commits are:
+- Small
+- Focused
+- Descriptive
+
+Examples:
+
+```text
+Add login form validation
+Fix navbar mobile layout
+Update database migration
+```
+
+---
+
+## Push changes
+
+```bash
 git push
 ```
 
-### What they do
-- `git status` shows the current state of your working tree and branch.
-- `git add <file>` stages a specific file.
-- `git add -A` stages all changes.
-- `git commit -m "message"` saves a checkpoint in history.
-- `git push` sends commits to the remote repo.
+Uploads commits to the remote repository.
 
-***
+---
 
-## 2) Getting started
+# 2. Repository Setup
 
-### Set your identity
-```bash
-git config --global user.email "email@example.com"
-```
+## Check remote repositories
 
-You can use your GitHub noreply email if you want privacy.
-
-### Check remotes
 ```bash
 git remote -v
 ```
 
-Shows fetch and push URLs.
+Example:
 
-### Ignore files
-Create a `.gitignore` file to exclude files and folders you do not want tracked.
-
-Examples:
-```gitignore
-# ignore a file
-.env
-
-# ignore a folder
-node_modules/
-
-# ignore all files of a type
-*.log
+```text
+origin git@github.com:user/project.git
 ```
 
-***
+---
 
-## 3) Working with branches
+## Clone repositories
 
-Branches let you isolate work safely.
+SSH:
 
-### Create and switch to a branch
+```bash
+git clone git@github.com:user/repository.git
+```
+
+HTTPS:
+
+```bash
+git clone https://github.com/user/repository.git
+```
+
+---
+
+## Configure `.gitignore`
+
+`.gitignore` prevents files from being tracked.
+
+Example:
+
+```gitignore
+# Environment variables
+.env
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+
+# Build output
+dist/
+```
+
+---
+
+# 3. Branch Workflow
+
+Branches isolate work so changes can be developed safely.
+
+## Create a feature branch
+
+Modern syntax:
+
+```bash
+git switch -c feature/login
+```
+
+Equivalent older syntax:
+
 ```bash
 git checkout -b feature/login
 ```
 
-### See branches
+---
+
+## List branches
+
+Local branches:
+
 ```bash
 git branch
+```
+
+All branches:
+
+```bash
 git branch -a
 ```
 
-- `git branch` shows local branches.
-- `git branch -a` shows local and remote branches.
+---
 
-### Push a new branch
+## Switch branches
+
+```bash
+git switch main
+```
+
+or:
+
+```bash
+git checkout main
+```
+
+---
+
+## Push a new branch
+
 ```bash
 git push -u origin feature/login
 ```
 
-`-u` sets the upstream branch so future `git push` and `git pull` work without extra arguments.
+`-u` sets the upstream branch so future:
 
-### Switch branches
 ```bash
-git checkout main
-```
-
-***
-
-## 4) Merging work
-
-When a feature is ready, merge it back into your target branch.
-
-### Merge steps
-```bash
-git checkout main
-git fetch
-git merge feature/login
-git push origin main
-```
-
-### What happens
-- Switch to the branch you want to merge into.
-- Update it first.
-- Merge the feature branch.
-- Push the updated branch to GitHub.
-
-***
-
-## 5) Pulling and fetching
-
-### Pull
-```bash
+git push
 git pull
+```
+
+work without specifying the remote branch.
+
+---
+
+# 4. Professional Feature Branch Workflow
+
+Start from an updated main branch:
+
+```bash
+git switch main
 git pull origin main
 ```
 
-`git pull` gets remote changes and merges them into your current branch.
+Create a feature branch:
 
-### Fetch
+```bash
+git switch -c feature/navbar
+```
+
+Work:
+
+```bash
+git add -A
+git commit -m "Add responsive navbar"
+```
+
+Push:
+
+```bash
+git push -u origin feature/navbar
+```
+
+Create a Pull Request on GitHub.
+
+---
+
+# 5. Pull Requests
+
+Recommended GitHub workflow:
+
+```text
+feature branch
+       |
+       |
+       ↓
+Pull Request
+       |
+       ↓
+Code review
+       |
+       ↓
+CI checks
+       |
+       ↓
+Merge into main
+```
+
+Common merge strategies:
+
+## Squash and merge
+
+Combines all PR commits into one commit.
+
+Example:
+
+Before:
+
+```text
+A---B---C---D---E---F
+```
+
+After:
+
+```text
+A---B---C---S
+```
+
+Best for:
+- Feature branches
+- Keeping main history clean
+
+---
+
+## Rebase and merge
+
+Keeps individual commits but creates a linear history.
+
+Before:
+
+```text
+A---B---C
+     \
+      D---E
+```
+
+After:
+
+```text
+A---B---C---D'---E'
+```
+
+Best when commits are meaningful.
+
+---
+
+## Merge commit
+
+Preserves branch history.
+
+```text
+A---B---C------M
+        \     /
+         D---E
+```
+
+Best for:
+- Long-running branches
+- Release branches
+
+---
+
+# 6. Syncing Changes
+
+## Fetch
+
 ```bash
 git fetch
 ```
 
-`git fetch` downloads remote updates without merging them.
+Downloads remote changes without applying them.
 
-Use `fetch` when you want to inspect changes first.
+Useful when you want to inspect changes first.
 
-***
+---
 
-## 6) Undoing changes safely
+## Pull
 
-### Revert a commit
 ```bash
-git revert 3321844
+git pull
 ```
 
-This creates a new commit that undoes the selected commit. It is the safer option because it preserves history.
+Equivalent to:
 
-### When to use revert
-- You already pushed the commit.
-- You want to undo something without rewriting history.
-- You are working with a shared branch.
+```bash
+git fetch
+git merge
+```
 
-***
+Downloads and merges remote changes.
 
-## 7) Comparing changes
+---
 
-### See unstaged changes
+## Update your feature branch
+
+Before starting work:
+
+```bash
+git switch main
+git pull
+
+git switch feature/login
+git merge main
+```
+
+or:
+
+```bash
+git rebase main
+```
+
+Rebase keeps a cleaner history.
+
+---
+
+# 7. Comparing Changes
+
+## Unstaged changes
+
 ```bash
 git diff
 ```
 
-### Compare a specific file
+---
+
+## Specific file
+
 ```bash
 git diff index.html
 ```
 
-### Cleaner word-level diff
+---
+
+## Word-level comparison
+
 ```bash
 git diff --color-words index.html
 ```
 
-### See staged changes
+---
+
+## Staged changes
+
 ```bash
 git diff --staged
-git diff --staged index.html
 ```
 
-### Compare branches
+---
+
+## Compare branches
+
 ```bash
 git diff main feature/login
-git diff main feature/login index.html
 ```
 
-Useful for seeing exactly what changed between branches or in one file.
+---
 
-***
+# 8. Undo Changes
 
-## 8) Commit history and logs
+## Revert a commit (recommended)
 
-### Compact history
+```bash
+git revert <commit-hash>
+```
+
+Creates a new commit that reverses another commit.
+
+Use when:
+- Commit is already pushed
+- Working on shared branches
+
+---
+
+## Discard local file changes
+
+```bash
+git restore filename
+```
+
+---
+
+## Unstage a file
+
+```bash
+git restore --staged filename
+```
+
+---
+
+# 9. Temporary Changes (Stash)
+
+Save unfinished work:
+
+```bash
+git stash
+```
+
+Restore later:
+
+```bash
+git stash pop
+```
+
+Useful when you need to quickly switch branches.
+
+---
+
+# 10. Commit History
+
+Compact history:
+
 ```bash
 git log --oneline
 ```
 
-This gives a short, easy-to-scan commit history.
+Detailed history:
 
-***
-
-## 9) Cloning repositories
-
-### Clone with SSH
 ```bash
-git clone git@github.com:username/repo.git
+git log
 ```
 
-### Clone with HTTPS
+Visual branch history:
+
 ```bash
-git clone https://github.com/username/repo.git
+git log --oneline --graph --all
 ```
 
-Your notes had the SSH URL repeated for HTTPS; the HTTPS format should use `https://`.
+---
 
-***
+# 11. Branch Cleanup
 
-## 10) File mode issues across OSes
+Delete local branch:
 
-If you clone between Windows and Linux/Unix and get annoying file permission diffs:
+```bash
+git branch -d feature/login
+```
 
-### Current repo only
+If using **Squash and Merge**, Git may not detect it as merged:
+
+```bash
+git branch -D feature/login
+```
+
+Delete remote branch:
+
+```bash
+git push origin --delete feature/login
+```
+
+Remove stale remote references:
+
+```bash
+git fetch --prune
+```
+
+---
+
+# 12. File Permission Issues
+
+If Linux/Windows causes permission-only changes:
+
+Current repository:
+
 ```bash
 git config core.filemode false
 ```
 
-### Global
+Global:
+
 ```bash
 git config --global core.filemode false
 ```
 
-### In `~/.gitconfig`
-```ini
-[core]
-    filemode = false
-```
+---
 
-***
+# 13. GitHub Pages Deployment
 
-## 11) Remote branch cleanup
+For frontend builds using `dist`:
 
-### Update remote branch list
+Remove `dist` from `.gitignore`.
+
+Build:
+
 ```bash
-git remote update origin --prune
+npm run build
 ```
 
-This removes stale remote-tracking branches locally.
+Deploy:
 
-***
-
-## 12) GitHub Pages deploy basics
-
-If you are deploying a frontend app to GitHub Pages and using a build output folder like `dist`:
-
-### Steps
-1. Remove `dist` from `.gitignore`.
-2. Commit the build output if needed.
-3. Push the subtree to `gh-pages`.
-
-### Example
 ```bash
 git add dist
-git commit -m "Initial dist subtree commit"
+git commit -m "Deploy website"
 git subtree push --prefix dist origin gh-pages
 ```
 
-### Package script example
+Package script:
+
 ```json
 {
   "scripts": {
-    "gh-pages": "git subtree push --prefix dist origin gh-pages && git push"
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   }
 }
 ```
 
-Then run:
-```bash
-npm run gh-pages
-```
-
-***
-
-## 13) Quick everyday commands
+Run:
 
 ```bash
-git status                  # See repo state
-git add -A                  # Stage all changes
-git commit -m "msg"         # Commit
-git push                    # Push current branch
-git pull                    # Pull + merge
-git fetch                   # Download without merging
-git branch                  # List branches
-git checkout -b new-branch  # Create and switch
-git checkout main           # Switch branch
-git merge feature-branch    # Merge branch
-git revert <commit-hash>    # Safely undo a commit
-git log --oneline           # Compact history
-git diff                    # Show changes
-git remote -v               # Show remotes
+npm run deploy
 ```
 
-***
+---
 
-## 14) Recommended GitHub workflow
+# 14. Releases and Tags
 
-A clean feature workflow looks like this:
+Create a version tag:
 
 ```bash
-git checkout -b feature/navbar
-# make changes
-git add -A
-git commit -m "Add responsive navbar"
-git push -u origin feature/navbar
-# open pull request on GitHub
+git tag v1.0.0
 ```
 
-Then after review:
+Push tags:
 
 ```bash
-git checkout main
-git pull origin main
-git merge feature/navbar
-git push origin main
+git push origin --tags
 ```
 
-***
-### Delete a branch
+Useful for:
+- Releases
+- Production versions
+- Deployment tracking
+
+---
+
+# 15. Recommended Professional Practices
+
+## Branch naming
+
+Examples:
+
+```text
+feature/user-auth
+feature/payment-flow
+bugfix/login-error
+hotfix/security-patch
+```
+
+---
+
+## Commit messages
+
+Prefer:
+
+```text
+Add password reset flow
+Fix mobile navigation issue
+Update API validation
+```
+
+Avoid:
+
+```text
+changes
+fix
+update stuff
+```
+
+---
+
+## Team practices
+
+- Never commit directly to `main`.
+- Use pull requests.
+- Require code reviews.
+- Run tests before merging.
+- Keep commits focused.
+- Keep branches short-lived.
+- Pull latest changes before starting work.
+- Use `.gitignore` correctly.
+- Protect production branches.
+
+---
+
+# 16. Quick Reference
+
 ```bash
-git branch -d feature/login
-git push origin --delete feature/login
+git status                    # Repository status
+git add -A                    # Stage changes
+git commit -m "message"       # Commit changes
+git push                      # Push commits
+
+git fetch                     # Download remote changes
+git pull                      # Fetch + merge
+
+git branch                    # List branches
+git switch main               # Switch branch
+git switch -c feature/name    # Create branch
+
+git merge branch-name         # Merge branch
+git rebase main               # Rebase branch
+
+git diff                      # Show changes
+git log --oneline             # View history
+
+git stash                     # Temporarily save work
+git stash pop                 # Restore work
+
+git revert <hash>             # Safely undo commit
+
+git branch -D branch-name     # Delete local branch
+git push origin --delete name # Delete remote branch
 ```
-
-## 15) Best practices
-
-- Commit small, focused changes.
-- Use clear commit messages.
-- Branch for each feature or fix.
-- Pull before you start work.
-- Revert instead of rewriting shared history.
-- Keep `.gitignore` updated.
-- Use GitHub branches and pull requests for collaboration.
-
-***
-
-## 16) Branch lifecycle
-- Create branch.
-- Work and commit on branch.
-- Push branch to GitHub.
-- Open pull request.
-- Merge into `main`.
-- Delete branch locally and remotely when done.
-
-
-
-***
-
