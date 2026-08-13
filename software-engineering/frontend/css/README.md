@@ -1,6 +1,7 @@
 # CSS Reference
 
 - [CSS Cheat Sheet](./css-cheat-sheet.md)
+- [CSS Text Design](./css-text-design.md)
 - [Tailwind CSS cheat Sheet](./tailwind/tailwind-css-cheat-sheet.md)
 - [CSS Flexbox poster](./resources/css-flexbox-poster.png)
 - [CSS3 mega cheat sheet](./resources/css3-mega-cheat-sheet-a4.pdf)
