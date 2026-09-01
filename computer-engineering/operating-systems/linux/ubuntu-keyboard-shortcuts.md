@@ -4,41 +4,186 @@
 
 ## Window Management
 
-- Super + Left/Right Arrow: Snap window to left/right half of the screen
-- Super + Up Arrow: Maximize window
-- Super + Down Arrow: Restore/minimize window
-- Alt + Tab: Switch between open applications
-- Alt + F4: Close current window
-- Alt + Space: Open window menu
+| Shortcut                | Action                       |
+| ----------------------- | ---------------------------- |
+| `Super` + `←`           | Tile window left             |
+| `Super` + `→`           | Tile window right            |
+| `Super` + `↑`           | Maximize window              |
+| `Super` + `↓`           | Restore / unmaximize window  |
+| `Alt` + `F4`            | Close window                 |
+| `Alt` + `F10`           | Maximize / restore window    |
+| `Alt` + `F7`            | Move window                  |
+| `Alt` + `F8`            | Resize window                |
+| `Alt` + `Space`         | Open window menu             |
+| `Super` + `Shift` + `←` | Move window to left monitor  |
+| `Super` + `Shift` + `→` | Move window to right monitor |
+
+## Application Switching
+
+| Shortcut               | Action                                         |
+| ---------------------- | ---------------------------------------------- |
+| `Alt` + `Tab`          | Switch applications                            |
+| `Super` + `Tab`        | Switch windows                                 |
+| `Alt` + `Esc`          | Cycle through windows                          |
+| `Super` + `` ` ``      | Switch between windows of the same application |
+| `Alt` + `F6`           | Cycle through windows                          |
+| `Ctrl` + `Alt` + `Tab` | Move focus to top bar                          |
 
 ## Workspaces
 
-- Ctrl + Alt + Arrow (←/→/↑/↓): Switch workspaces
-- Shift + Ctrl + Alt + Arrow: Move window between workspaces
+### Switch Workspaces
 
-## Launchers and Search
+| Shortcut              | Action             |
+| --------------------- | ------------------ |
+| `Super` + `Page Up`   | Previous workspace |
+| `Super` + `Page Down` | Next workspace     |
+| `Ctrl` + `Alt` + `←`  | Previous workspace |
+| `Ctrl` + `Alt` + `→`  | Next workspace     |
+| `Ctrl` + `Alt` + `↑`  | Workspace above    |
+| `Ctrl` + `Alt` + `↓`  | Workspace below    |
 
-- Super: Open Activities overview / main menu
-- Alt + F2: Run a command
+### Move Windows Between Workspaces
 
-## Screenshot and Screen Capture
+| Shortcut                        | Action                            |
+| ------------------------------- | --------------------------------- |
+| `Shift` + `Super` + `Page Up`   | Move window to previous workspace |
+| `Shift` + `Super` + `Page Down` | Move window to next workspace     |
+| `Ctrl` + `Alt` + `Shift` + `←`  | Move window to workspace left     |
+| `Ctrl` + `Alt` + `Shift` + `→`  | Move window to workspace right    |
+| `Ctrl` + `Alt` + `Shift` + `↑`  | Move window to workspace above    |
+| `Ctrl` + `Alt` + `Shift` + `↓`  | Move window to workspace below    |
 
-- PrtSc: Take screenshot of entire screen
-- Alt + PrtSc: Take screenshot of current window
-- Shift + PrtSc: Select area to screenshot
+## Launch & Search
 
-## Application and System
+| Shortcut             | Action                   |
+| -------------------- | ------------------------ |
+| `Super`              | Open Activities / search |
+| `Super` + `A`        | Show applications        |
+| `Alt` + `F2`         | Run a command            |
+| `Ctrl` + `Alt` + `T` | Open Terminal            |
 
-- Ctrl + Alt + T: Open Terminal | Ctrl+Page Up/Page Down to switch tabs
-- Super + L: Lock the screen
-- Ctrl + Alt + Delete: Bring up logout and restart menu
-- Super + A: Show all applications
-- Super + D: Show desktop
-- Ctrl + Q: Quit application
+## Screenshots & Screen Recording
 
-## File Management (Nautilus)
+| Shortcut                       | Action                        |
+| ------------------------------ | ----------------------------- |
+| `PrtSc`                        | Screenshot                    |
+| `Alt` + `PrtSc`                | Screenshot current window     |
+| `Shift` + `PrtSc`              | Screenshot selected area      |
+| `Ctrl` + `Alt` + `Shift` + `R` | Start / stop screen recording |
 
-- Ctrl + L: Focus location bar
-- Ctrl + N: New window
-- Ctrl + 1/2/3: Switch views (icons, list, compact)
-- F2: Rename selected file
+## System
+
+| Shortcut                  | Action                 |
+| ------------------------- | ---------------------- |
+| `Super` + `L`             | Lock screen            |
+| `Ctrl` + `Alt` + `Delete` | Open power off dialog  |
+| `Super` + `V`             | Open notification list |
+| `Esc`                     | Close menu / popup     |
+
+## Terminal & Shell
+
+| Shortcut     | Action                      |
+| ------------ | --------------------------- |
+| `Ctrl` + `C` | Interrupt running command   |
+| `Ctrl` + `D` | EOF / exit shell            |
+| `Ctrl` + `L` | Clear terminal              |
+| `Ctrl` + `R` | Search command history      |
+| `Ctrl` + `A` | Beginning of command        |
+| `Ctrl` + `E` | End of command              |
+| `Ctrl` + `U` | Delete to beginning of line |
+| `Ctrl` + `K` | Delete to end of line       |
+| `Ctrl` + `W` | Delete previous word        |
+| `Alt` + `B`  | Move backward one word      |
+| `Alt` + `F`  | Move forward one word       |
+| `Ctrl` + `Z` | Suspend current process     |
+| `Tab`        | Autocomplete                |
+| `↑ / ↓`      | Command history             |
+
+## Terminal Muscle Memory
+
+```text
+Ctrl + R    → Search command history
+Ctrl + C    → Stop command
+Ctrl + L    → Clear terminal
+Ctrl + A    → Beginning of line
+Ctrl + E    → End of line
+Ctrl + W    → Delete previous word
+Ctrl + U    → Delete before cursor
+Ctrl + K    → Delete after cursor
+Ctrl + Z    → Suspend process
+Ctrl + D    → Exit shell
+Tab         → Autocomplete
+
+```
+
+## Files — GNOME Files
+
+| Shortcut           | Action                   |
+| ------------------ | ------------------------ |
+| `Ctrl` + `L`       | Location bar             |
+| `Ctrl` + `N`       | New window               |
+| `Ctrl` + `T`       | New tab                  |
+| `Ctrl` + `W`       | Close tab / window       |
+| `Ctrl` + `H`       | Show / hide hidden files |
+| `Ctrl` + `A`       | Select all               |
+| `Ctrl` + `F`       | Search                   |
+| `F2`               | Rename                   |
+| `Delete`           | Move to Trash            |
+| `Shift` + `Delete` | Permanently delete       |
+
+## Application Shortcuts
+
+| Shortcut               | Action                   |
+| ---------------------- | ------------------------ |
+| `Ctrl` + `N`           | New                      |
+| `Ctrl` + `O`           | Open                     |
+| `Ctrl` + `S`           | Save                     |
+| `Ctrl` + `Shift` + `S` | Save As                  |
+| `Ctrl` + `P`           | Print                    |
+| `Ctrl` + `W`           | Close tab / window       |
+| `Ctrl` + `Q`           | Quit application         |
+| `Ctrl` + `F`           | Find                     |
+| `Ctrl` + `G`           | Find next                |
+| `Ctrl` + `Shift` + `G` | Find previous            |
+| `Ctrl` + `H`           | Find & replace           |
+| `Ctrl` + `Z`           | Undo                     |
+| `Ctrl` + `Shift` + `Z` | Redo                     |
+| `Ctrl` + `A`           | Select all               |
+| `Ctrl` + `X`           | Cut                      |
+| `Ctrl` + `C`           | Copy                     |
+| `Ctrl` + `V`           | Paste                    |
+| `Ctrl` + `Shift` + `V` | Paste without formatting |
+
+## Keyboard Navigation
+
+| Shortcut        | Action                 |
+| --------------- | ---------------------- |
+| `Tab`           | Next control           |
+| `Shift` + `Tab` | Previous control       |
+| `Ctrl` + `Tab`  | Next control group     |
+| `Arrow Keys`    | Navigate lists / menus |
+| `Enter`         | Activate selection     |
+| `Space`         | Activate focused item  |
+| `Esc`           | Cancel / close         |
+| `F10`           | Open application menu  |
+| `Shift` + `F10` | Open context menu      |
+
+## Power-User Shortlist
+
+| Shortcut                             | Action                         |
+| ------------------------------------ | ------------------------------ |
+| `Super`                              | Search / launch                |
+| `Super` + `← / →`                    | Tile window                    |
+| `Super` + `↑ / ↓`                    | Maximize / restore             |
+| `Alt` + `Tab`                        | Switch applications            |
+| `Super` + `Tab`                      | Switch windows                 |
+| `Super` + `Page Up / Down`           | Switch workspace               |
+| `Shift` + `Super` + `Page Up / Down` | Move window between workspaces |
+| `Super` + `Shift` + `← / →`          | Move window between monitors   |
+| `Super` + `A`                        | Applications                   |
+| `Alt` + `F2`                         | Run command                    |
+| `Ctrl` + `Alt` + `T`                 | Terminal                       |
+| `Super` + `L`                        | Lock screen                    |
+| `PrtSc`                              | Screenshot                     |
+| `Ctrl` + `R`                         | Search terminal history        |
+| `Ctrl` + `C`                         | Stop command                   |
