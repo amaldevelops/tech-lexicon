@@ -2,6 +2,7 @@
 
 ## Index
 
+- [Ubuntu Keyboard Shortcuts](./ubuntu-keyboard-shortcuts.md)
 - [Terminal Commands - Full](./terminal-commands-full.md)
 - [File system types](./file-system-types.md)
 - [How Linux work](./how-linux-work.md)
