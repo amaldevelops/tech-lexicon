@@ -7,7 +7,7 @@
 - [File system types](./file-system-types.md)
 - [How Linux work](./how-linux-work.md)
 - [KVM+Virt-Manager setup](../virtual-machines/kvm-virt-manager-setup.md)
-- [Raspberry Pi Commands](/computer-engineering/hardware-electronics/raspberry-pi/README.md)
+- [Raspberry Pi Commands](../../hardware-electronics/raspberry-pi/raspberry-pi-firmware.md)
 - [Ubuntu New Install Configuration](./ubuntu-new-install.md)
   - [Dot Files](./dot-files/README.md)
 - [Linux Programs](./linux-programs/README.md)
