@@ -1,15 +1,15 @@
 # Linux Reference
 
-## Index
+[Back to Main Index](../../../topics-index.md)
 
 - [Ubuntu Keyboard Shortcuts](./ubuntu-keyboard-shortcuts.md)
 - [Terminal Commands - Full](./terminal-commands-full.md)
 - [File system types](./file-system-types.md)
 - [How Linux work](./how-linux-work.md)
-- [KVM+Virt-Manager setup](./kvm-virt-manager-setup.md)
+- [KVM+Virt-Manager setup](../virtual-machines/kvm-virt-manager-setup.md)
 - [Raspberry Pi Commands](/computer-engineering/hardware-electronics/raspberry-pi/README.md)
-- [Ubuntu New Install Configuration](./ubuntun-new-install.md)
-    - [Dot Files](./dot-files/README.md)
+- [Ubuntu New Install Configuration](./ubuntu-new-install.md)
+  - [Dot Files](./dot-files/README.md)
 - [Linux Programs](./linux-programs/README.md)
 
 ## External Links
@@ -17,5 +17,3 @@
 - [The Unix Shell](https://swcarpentry.github.io/shell-novice/)
 - [Raspberry Pi](/computer-engineering/hardware-electronics/raspberry-pi)
 - [Ubuntu creating desktop link](./ubuntu-create-desktop-link.md)
-
-[Back to Main Index](../../../topics-index.md)

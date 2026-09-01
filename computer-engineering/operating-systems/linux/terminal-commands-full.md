@@ -1,5 +1,7 @@
 # Linux Terminal Commands
 
+[Back to Linux reference](./README.md)
+
 ## Frequently used commands
 
 - `sudo apt install ./deb_file` : Manually install Deb files from current directory

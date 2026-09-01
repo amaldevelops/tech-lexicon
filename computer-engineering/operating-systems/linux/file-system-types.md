@@ -1,4 +1,5 @@
 # Linux file system types
+[Back to Linux reference](./README.md)
 
 **Journaling** (or write-ahead logging) is a technique used by modern file systems, including many for Linux, to improve reliability and crash recovery. When changes are about to be made to files or directories, the file system first records a summary of the intended changes in a special area called the **journal** (a log), _before_ making those changes to the main file system[^2] [^4] [^5] [^6] [^7].
 
