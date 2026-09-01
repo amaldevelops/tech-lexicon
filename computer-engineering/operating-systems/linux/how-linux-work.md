@@ -1,5 +1,6 @@
 # How Linux work
 [Back to Linux reference](./README.md)
+
 **Linux works through a layered, modular architecture that separates hardware management, core system functions, user interaction, and applications.** Here’s how the main components interact:
 
 ### 1. Hardware Layer
